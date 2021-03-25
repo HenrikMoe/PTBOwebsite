@@ -1,0 +1,10 @@
+html body{
+    background-color: black;
+    color: white;
+}
+
+.dark-mode {
+    background-color: white;
+    color: black;
+
+  }

@@ -1,0 +1,131 @@
+<html>
+    <head>
+      <title>PTBO - Portal To Blockchain Organization</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="The portal to blockchain Organization"/>
+      <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+      <link rel = "icon" href ="./images/logo.png"  type = "image/x-icon">
+      <link rel="stylesheet" type="text/css" href="./styles/page1.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src='./js/alternator.js'></script>
+      <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css" integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+    </head>
+
+
+    <body>
+
+
+
+      <div class = 'container fade-in'>
+
+
+      <header class='row'>
+            <div  class = 'col-lg-4 col-md-4 col-sm-3 col-xs-3 p-3'>
+              <img src='./images/image.jpg' onclick = "document.location='index.html'" style='width: 200; height: 150; border-radius: 5px;'>
+          </div>
+          <div class = 'col-lg-7 col-md-7 col-sm-9 col-xs-9 p-3 mt-3'>
+            <h1>The Portal To Blockchain Organization </h1>
+          </div>
+          <div class = 'col-lg-1 col-md-1'>
+            <button class = 'pure-button' id = 'themechanger' style ='margin-top: 100px;' onclick="changeTheme()">Dark/Light</button>
+            <script>
+              function changeTheme() {
+                 var element = document.body;
+                  element.classList.toggle("dark-mode");
+                  var logo2 = document.getElementById('dark')
+
+                  
+                }    
+
+            </script>
+          </div>
+      </header>
+
+
+     
+    
+<div class = 'row mt-3'>
+  <div class = 'col-lg-8 col-md-8'>
+    <h1> Crypto Count </h1>
+
+  </div>
+  <div class = 'col-lg-2 col-md-2' >
+    <button class = 'pure-button' style ='margin-top: 10px;' onclick="document.location='https://postaxation.com'">V0.1</button>
+
+  </div>
+  <div class = 'col-lg-2 col-md-2' >
+    <button class = 'pure-button' style ='margin-top: 10px;' onclick="document.location='https://github.com/HenrikMoe/CryptoCount'">GitHub</button>
+
+  </div>
+</div>
+
+  <div class = 'row p-3'>
+ <text> 
+     Update: 02/10/2021
+     <br></br>
+     Development Area: Server
+     <br></br>
+     Developer Notes: Node.js/Express.js Framework expansion. MongoDB Expansion. 
+     <br></br>
+     Context: Identifiying areas of the exisiting framework to scale to new functionality. Creating delegator analysis functionality. Preparing system files for module development. 
+     <br></br>
+    
+ </text>
+  </div>
+
+  <div class = 'row p-3'>
+    <text> 
+        Update: 02/15/2021
+        <br></br>
+        Development Area: Server
+        <br></br>
+        Developer Notes: Framework expansion continues. Delegator analysis external data flow work. Scaling database with more fiat currencies. Testing GUI for socket client server communication is built. 
+        <br></br>
+        Context: Using the tzkt/baking bad and coingecko api. Delegator analysis program is basis of main server course. That program's dependencies dicatate the other supporintg modules development (i.e. the database and the client GUI)
+        <br></br>
+    </text>
+     </div>
+
+     <div class = 'row p-3'>
+      <text> 
+          Update: 02/24/2021
+          <br></br>
+          Development Area: Server
+          <br></br>
+          Developer Notes: database schemas set up. database updates set up. core analysis program further modularized. modularization of a realization function transforming the accouting sets set up. socket io accout authentication set up. socket.io dialogue set up  
+          <br></br>
+          Context: Delegator analysis program dependencies prepared.
+          <br></br>
+      </text>
+       </div>
+
+       <div class = 'row p-3'>
+        <text> 
+            Update: 03/10/2021
+            <br></br>
+            Development Area: Server, Server Client Routing
+            <br></br>
+            Developer Notes: parallel branches under development: 1) the tezosdelegatoranalysis program where we get users block rewards and perform accounting analysis on them continuosly 2) titled - react-auth-accounts - this branch is being used to develop the client server routing for user accounts and user experience
+            <br></br>
+            Context: Operators Henrik Moe and Shaheen Alemi develop the two main branches. 
+            <br></br>
+        </text>
+         </div>
+
+  <footer class = 'row'>
+    <div class = footer-text>
+      <p>&copy; Portal To Blockchain Organization 2021</p>
+    </div>
+  </footer>
+   
+</div>
+
+
+
+
+
+
+    </body>
+</html>

@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
+import classes from "./App.module.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	return (
+		<div className="App">
+			<BrowserRouter>
+				<Header />
+				<Switch>
+					<Route path="/" exact>
+						<div className={classes.Content}>
+							<h2>
+								Welcome to the Portal To Blockchain Organization
+								(PTBO). <br></br>
+							</h2>
+							<text>
+								At our thesis core, we are working to develop a
+								symmetrical structure to organize the blockchain
+								data structure.
+								<br></br>
+								Curently, we specialize in blockchain
+								interfacing applications.
+							</text>
+						</div>
+						<Footer />
+					</Route>
+					<Route path="/blogs" exact />
+				</Switch>
+			</BrowserRouter>
+		</div>
+	);
+};
 
 export default App;
