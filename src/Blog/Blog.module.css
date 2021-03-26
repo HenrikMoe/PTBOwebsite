@@ -3,13 +3,17 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin: 100px;
-	justify-content: center;
+	margin-top: 100px;
+}
+
+h1 {
+	color: var(--dark-gray);
 }
 
 .Content {
-	width: 50%;
-	min-width: 400px;
+	width: 40%;
+	max-width: 800px;
+	min-width: 300px;
 }
 
 .GitLink {
@@ -32,4 +36,11 @@
 	transform: translateY(-3px);
 	background: #2ea043;
 	box-shadow: 0 4px 24px rgb(0 0 0 / 16%), 0 0 1px rgb(1 0 0 / 16%);
+}
+
+span {
+	font-size: 0.8em;
+	color: var(--gray);
+	font-weight: 300;
+	letter-spacing: 0.8;
 }

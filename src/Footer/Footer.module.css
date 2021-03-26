@@ -1,8 +1,46 @@
 .Footer {
-	bottom: 0;
-	background: black;
-	height: 60px;
-	width: 100%;
+	position: relative;
+	bottom: -60px;
+	background: rgb(46, 31, 59);
+	height: 125px;
+	width: 100vw;
 	color: white;
-	padding: 50px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.CR {
+	margin: 25px;
+	color: rgb(196, 196, 196);
+}
+
+.FooterCol {
+	font-size: 0.8em;
+	color: rgb(196, 196, 196);
+}
+
+.ContactForm {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 5px;
+}
+
+.ContactLink {
+	font-weight: 300;
+	font-size: 0.8;
+	text-decoration: none;
+	font-weight: 400;
+	color: rgb(196, 196, 196);
+	margin: 5px 5px 5px 5px;
+}
+
+@media (max-width: 500px) {
+	.Footer {
+		font-size: 0.7em;
+	}
 }

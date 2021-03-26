@@ -1,9 +1,15 @@
 * {
 	--n_purple: rgb(98, 40, 175);
 	--gray: rgb(85, 85, 85);
+	--dark-gray: rgb(59, 59, 59);
+}
+*::-webkit-scrollbar {
+	display: none;
 }
 body {
 	margin: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
 	font-family: "Merriweather Sans", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;

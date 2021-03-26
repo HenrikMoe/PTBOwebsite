@@ -1,7 +1,13 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import classes from "./Header.module.css";
 import img from "../assets/image.jpg";
+import PeopleIcon from "@material-ui/icons/People";
+import MonetizationOnIcon from "@material-ui/icons/MonetizationOn";
+import EmailIcon from "@material-ui/icons/Email";
+import MailOutlineIcon from "@material-ui/icons/MailOutline";
+import GitHubIcon from "@material-ui/icons/GitHub";
+
 const Header = () => {
 	const [dropdown, setDropdown] = React.useState(null);
 
@@ -30,8 +36,9 @@ const Header = () => {
 					className={classes.BlogWindow}
 					onMouseLeave={handleHoverLeave}
 				>
+					<MonetizationOnIcon className={classes.Icon} />
 					<NavLink
-						className={classes.BlogLink}
+						className={classes.WindowLink}
 						to="/blogs/cryptocount"
 						onClick={handleHoverLeave}
 					>
@@ -52,7 +59,15 @@ const Header = () => {
 					className={classes.BlogWindow}
 					onMouseLeave={handleHoverLeave}
 				>
-					Resources
+					<PeopleIcon className={classes.Icon} />
+					<NavLink className={classes.WindowLink} to="/leadership">
+						<div className={classes.Title}>Leadership</div>
+						<p className={classes.Description}>
+							Learn more about the PTBO leadership, organization,
+							and team.
+						</p>
+					</NavLink>
+					<hr />
 				</div>
 			</div>
 		);
@@ -63,7 +78,36 @@ const Header = () => {
 					className={classes.BlogWindow}
 					onMouseLeave={handleHoverLeave}
 				>
-					Contact
+					<EmailIcon className={classes.Icon} />
+					<div className={classes.Title}>Get in touch</div>
+					<p className={classes.Description}>
+						These are the best mediums to reach out to the PTBO
+						team.
+					</p>
+					<hr />
+					<div className={classes.ContactRow}>
+						<div className={classes.ContactForm}>
+							<MailOutlineIcon className={classes.Icon} />
+							<a
+								href="mailto:test@gmail.com"
+								className={classes.ContactLink}
+							>
+								Email
+							</a>
+						</div>
+						<div className={classes.ContactForm}>
+							<GitHubIcon className={classes.Icon} />
+							<a
+								href="https://github.com/HenrikMoe?tab=repositories"
+								target="_blank"
+								rel="noreferrer"
+								className={classes.ContactLink}
+							>
+								Github
+							</a>
+						</div>
+					</div>
+					<hr />
 				</div>
 			</div>
 		);
@@ -73,7 +117,7 @@ const Header = () => {
 
 	return (
 		<div>
-			<div className={classes.Header}>
+			<header className={classes.Header}>
 				<NavLink
 					className={classes.Logo}
 					to="/"
@@ -106,7 +150,7 @@ const Header = () => {
 						Contact
 					</div>
 				</div>
-			</div>
+			</header>
 			{menu}
 		</div>
 	);

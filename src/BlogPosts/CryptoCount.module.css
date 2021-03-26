@@ -1,0 +1,10 @@
+.Updates {
+	margin: 25px 0px;
+	color: black;
+}
+
+.Notes {
+	color: var(--gray);
+	font-size: 0.8em;
+	font-weight: 400;
+}

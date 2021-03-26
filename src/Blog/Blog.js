@@ -18,6 +18,7 @@ const Blog = (props) => {
 				) : null}
 			</div>
 			<div className={classes.Content}>{props.children}</div>
+			<span>© Portal To Blockchain Organization 2021</span>
 		</div>
 	);
 };
