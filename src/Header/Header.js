@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import classes from "./Header.module.css";
 import img from "../assets/image.jpg";
 const Header = () => {
@@ -30,7 +30,18 @@ const Header = () => {
 					className={classes.BlogWindow}
 					onMouseLeave={handleHoverLeave}
 				>
-					Blogs
+					<NavLink
+						className={classes.BlogLink}
+						to="/blogs/cryptocount"
+						onClick={handleHoverLeave}
+					>
+						<div className={classes.Title}>CryptoCount</div>
+						<p className={classes.Description}>
+							Current status and progress on CryptoCount, a
+							web-based app that counts block rewards.
+						</p>
+					</NavLink>
+					<hr />
 				</div>
 			</div>
 		);
@@ -74,27 +85,26 @@ const Header = () => {
 					</span>
 				</NavLink>
 				<div className={classes.NavGroup}>
-					<NavLink
+					<div
 						className={classes.Link}
-						to="/blogs"
 						onMouseEnter={handleHoverEnter}
 					>
 						Blogs
-					</NavLink>
-					<NavLink
+					</div>
+					<div
 						className={classes.Link}
 						to="/resources"
 						onMouseEnter={handleResEnter}
 					>
 						Resources
-					</NavLink>
-					<NavLink
+					</div>
+					<div
 						className={classes.Link}
 						to="/resources"
 						onMouseEnter={handleContactEnter}
 					>
 						Contact
-					</NavLink>
+					</div>
 				</div>
 			</div>
 			{menu}

@@ -1,0 +1,35 @@
+.Body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 100px;
+	justify-content: center;
+}
+
+.Content {
+	width: 50%;
+	min-width: 400px;
+}
+
+.GitLink {
+	margin-bottom: 30px;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	font-size: 1.3em;
+	padding: 5px;
+	width: 150px;
+	background-color: #238636;
+	color: white;
+	box-shadow: 0 4px 12px rgb(0 0 0 / 8%), 0 0 1px rgb(1 0 0 / 10%);
+
+	transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.GitLink:hover {
+	cursor: pointer;
+	transform: translateY(-3px);
+	background: #2ea043;
+	box-shadow: 0 4px 24px rgb(0 0 0 / 16%), 0 0 1px rgb(1 0 0 / 16%);
+}

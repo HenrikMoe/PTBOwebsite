@@ -1,3 +1,7 @@
+* {
+	--n_purple: rgb(98, 40, 175);
+	--gray: rgb(85, 85, 85);
+}
 body {
 	margin: 0;
 	font-family: "Merriweather Sans", sans-serif;
