@@ -4,6 +4,7 @@
 	align-items: center;
 	justify-content: center;
 	margin-top: 100px;
+	animation: fadeIn 0.5s ease-in-out;
 }
 
 h1 {
@@ -43,4 +44,16 @@ span {
 	color: var(--gray);
 	font-weight: 300;
 	letter-spacing: 0.8;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0%;
+		transform: translateY(300px);
+	}
+
+	100% {
+		opacity: 100%;
+		transform: translateY(0px);
+	}
 }
