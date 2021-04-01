@@ -19,12 +19,12 @@ const Home = () => {
 					<h3>Welcome to</h3>
 					<h2>The Portal To Blockchain Organization (PTBO)</h2>
 					<text>
-						At our thesis core, we are working to develop a
-						symmetrical structure to organize the blockchain data
-						structure.
+						We are working to develop a symmetrical structure to
+						organize better integrate blockchain technology into our
+						society.
 						<br />
 						<br />
-						Curently, we specialize in blockchain interfacing
+						We currently specialize in blockchain interfacing
 						applications.
 					</text>
 				</div>

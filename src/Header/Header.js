@@ -30,6 +30,7 @@ const Header = () => {
 	let menu;
 
 	if (dropdown === "blogs") {
+		// Add blog hyperlinks here
 		menu = (
 			<div className={classes.WindowWrapper}>
 				<div
