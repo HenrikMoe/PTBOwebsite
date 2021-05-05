@@ -17,6 +17,11 @@ const Blog = (props) => {
 					</a>
 				) : null}
 			</div>
+
+			<div className={classes.Content}>
+				{props.about}
+				<hr className={classes.AboutHR} />
+			</div>
 			<div className={classes.Content}>{props.children}</div>
 			<span>© Portal To Blockchain Organization 2021</span>
 		</div>

@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import classes from "./Header.module.css";
 import img from "../assets/image.jpg";
 import PeopleIcon from "@material-ui/icons/People";
-import MonetizationOnIcon from "@material-ui/icons/MonetizationOn";
 import EmailIcon from "@material-ui/icons/Email";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import GitHubIcon from "@material-ui/icons/GitHub";
@@ -37,7 +36,6 @@ const Header = () => {
 					className={classes.BlogWindow}
 					onMouseLeave={handleHoverLeave}
 				>
-					<MonetizationOnIcon className={classes.Icon} />
 					<NavLink
 						className={classes.WindowLink}
 						to="/blogs/cryptocount"
