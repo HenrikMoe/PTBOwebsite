@@ -15,7 +15,7 @@ const API = () => {
 				</h3>
 				<div className={classes.Name}>Value Analysis</div>
 				<code className={classes.code}>
-					portaltoblockchain.org/CryptoCount/Tezos/Analysis/Auto
+					portaltoblockchain.org/CryptoCount/Analysis/Tezos/Auto
 				</code>
 				<div className={classes.Name}>Query Parameters</div>
 				<code className={classes.code}>
@@ -25,11 +25,10 @@ const API = () => {
 				fiat
 				<hr />
 				<h3 className={classes.EndPoint}>
-					Automatic Delegator Address Analysis While Realizing
+					Automatic Delegator Address Analysis While Realizing Quantity Of XTZ
 				</h3>
-				<div className={classes.Name}>Quantity Of XTZ</div>
 				<code className={classes.code}>
-					portaltoblockchain.org/CryptoCount/Tezos/Analysis/AutoRealizing
+					portaltoblockchain.org/CryptoCount/Analysis/Tezos/AutoRealizing
 				</code>
 				<div className={classes.Name}>Query Parameters</div>
 				<code className={classes.code}>
