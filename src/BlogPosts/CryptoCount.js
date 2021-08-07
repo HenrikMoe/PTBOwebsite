@@ -95,6 +95,7 @@ const CryptoCount = () => {
 				<img src={calS} alt="cal" />
 				<img src={analysisO} alt="cal" />
 			</Update>
+			<Update date="Update: 5/5/2021" area="area" />
 		</Blog>
 	);
 };

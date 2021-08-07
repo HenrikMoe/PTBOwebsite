@@ -1,0 +1,20 @@
+.LitWrapper {
+	display: flex;
+	height: 70vh;
+	justify-content: center;
+}
+
+.Literature {
+	width: 40%;
+	margin: 100px;
+}
+
+.Link {
+	color: var(--gray);
+	text-decoration: none;
+	font-weight: 400;
+}
+
+.Link:hover {
+	color: var(--n_purple);
+}

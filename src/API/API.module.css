@@ -1,0 +1,44 @@
+.APIWrapper {
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+	color: var(--gray);
+}
+
+.API {
+	width: 40%;
+}
+
+.code {
+	font-size: 16px;
+}
+
+.HR {
+	height: 3px;
+	background-color: var(--n_purple);
+	border: none;
+	width: 15%;
+	margin: 10px 0 0;
+}
+
+.Header {
+	color: var(--dark-gray);
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+}
+
+.EP {
+	color: var(--dark-gray);
+}
+
+.Name {
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+.EndPoint {
+	color: var(--dark-gray);
+	margin-bottom: 8px;
+}

@@ -2,7 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import classes from "./Header.module.css";
 import img from "../assets/image.jpg";
-import PeopleIcon from "@material-ui/icons/People";
 import EmailIcon from "@material-ui/icons/Email";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import GitHubIcon from "@material-ui/icons/GitHub";
@@ -11,11 +10,7 @@ const Header = () => {
 	const [dropdown, setDropdown] = React.useState(null);
 
 	const handleHoverEnter = () => {
-		setDropdown("blogs");
-	};
-
-	const handleResEnter = () => {
-		setDropdown("resources");
+		setDropdown("cryptocount");
 	};
 
 	const handleContactEnter = () => {
@@ -28,7 +23,7 @@ const Header = () => {
 
 	let menu;
 
-	if (dropdown === "blogs") {
+	if (dropdown === "cryptocount") {
 		// Add blog hyperlinks here
 		menu = (
 			<div className={classes.WindowWrapper}>
@@ -36,7 +31,7 @@ const Header = () => {
 					className={classes.BlogWindow}
 					onMouseLeave={handleHoverLeave}
 				>
-					<NavLink
+					{/* <NavLink
 						className={classes.WindowLink}
 						to="/blogs/cryptocount"
 						onClick={handleHoverLeave}
@@ -46,26 +41,35 @@ const Header = () => {
 							Current status and progress on CryptoCount, a
 							web-based app that counts block rewards.
 						</p>
+					</NavLink> */}
+					<NavLink
+						className={classes.WindowLink}
+						to="/api"
+						onClick={handleHoverLeave}
+					>
+						<div className={classes.Title}>Developer API</div>
+						<p className={classes.Description}>API documentation</p>
 					</NavLink>
 					<hr />
-				</div>
-			</div>
-		);
-	} else if (dropdown === "resources") {
-		menu = (
-			<div className={classes.WindowWrapper}>
-				<div
-					className={classes.BlogWindow}
-					onMouseLeave={handleHoverLeave}
-				>
-					<PeopleIcon className={classes.Icon} />
-					<NavLink className={classes.WindowLink} to="/leadership">
-						<div className={classes.Title}>Leadership</div>
-						<p className={classes.Description}>
-							Learn more about the PTBO leadership, organization,
-							and team.
-						</p>
+					<NavLink
+						className={classes.WindowLink}
+						to="/literature"
+						onClick={handleHoverLeave}
+					>
+						<div className={classes.Title}>Academic Literature</div>
+						<p className={classes.Description}>Resourses.....</p>
 					</NavLink>
+					<hr />
+					<a
+						className={classes.WindowLink}
+						href=""
+						target="_blank"
+						rel="noreferrer"
+						onClick={handleHoverLeave}
+						disabled
+					>
+						<div className={classes.Title}>Download Links</div>
+					</a>
 					<hr />
 				</div>
 			</div>
@@ -132,14 +136,7 @@ const Header = () => {
 						className={classes.Link}
 						onMouseEnter={handleHoverEnter}
 					>
-						Blogs
-					</div>
-					<div
-						className={classes.Link}
-						to="/resources"
-						onMouseEnter={handleResEnter}
-					>
-						Resources
+						CryptoCount
 					</div>
 					<div
 						className={classes.Link}
