@@ -21,12 +21,7 @@ const Home = () => {
 						The Portal To Blockchain Organization (PTBO)
 					</h2>
 					<text className={classes.Sub}>
-						We are working to develop a symmetrical structure to
-						organize better integrate blockchain technology into our
-						society.
-						<br />
-						<br />
-						We currently specialize in blockchain interfacing
+						We specialize in blockchain interfacing
 						applications.
 					</text>
 				</div>
