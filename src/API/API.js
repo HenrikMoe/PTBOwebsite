@@ -26,23 +26,40 @@ const API = () => {
 					Payload Properties
 				</h3>
 				<code className={classes.code}>
-					unrealizedRewards - The unrealized reward set of the delegator address.
-					unrealizedBasisRewards - The unrealized reward set by the basis cost of the delegator address.
-					unrealizedBasisRewardsDep - The unrealized reward set by the basis cost and the supply depletion cost of the delegator address.
-					unrealizedBasisRewardsMVDep - The unrealized reward set by the basis cost and the market value dilution cost of the delegator address.
-					address - The delegator address.
-					fiat - The fiat currency.
-					basisPrice - The calcualted basis cost. 
-					xtzBasis - The staking basis. 
-					basisP - The staking basis by the basis cost. 
-					basisDep - The staking basis by the basis cost and by the supply depletion cost.
-					basisMVdep - The staking basis by the basis cost and by the market value dilution cost. 
-				</code>
+					unrealizedRewards </code> 
+					The unrealized reward set of the delegator address.
+					<code className={classes.code}>
+					unrealizedBasisRewards </code> 
+					The unrealized reward set by the basis cost of the delegator address.
+					<code className={classes.code}>
+					unrealizedBasisRewardsDep </code> 
+					The unrealized reward set by the basis cost and the supply depletion cost of the delegator address.
+					<code className={classes.code}>
+					unrealizedBasisRewardsMVDep </code> 
+					The unrealized reward set by the basis cost and the market value dilution cost of the delegator address.
+					<code className={classes.code}>
+					address </code> 
+					The delegator address.
+					<code className={classes.code}>
+					fiat </code> 
+					The fiat currency.
+					<code className={classes.code}>
+					basisPrice </code> 
+					The calcualted basis cost. 
+					<code className={classes.code}>
+					xtzBasis </code> 
+					The staking basis. 
+					<code className={classes.code}>
+					basisP </code> 
+					The staking basis by the basis cost. 
+					<code className={classes.code}>
+					basisDep </code> 
+					The staking basis by the basis cost and by the supply depletion cost.
+					<code className={classes.code}>
+					basisMVdep </code> 
+					The staking basis by the basis cost and by the market value dilution cost.
+				 
 				<hr />
-
-
-
-
 
 				<h3 className={classes.EndPoint}>
 					Automatic Delegator Address Analysis While Realizing Quantity Of XTZ
@@ -59,44 +76,92 @@ const API = () => {
 					Payload Reward Properties
 				</h3>
 				<code className={classes.code}>
-					realizingRewards - The quantity of rewards being realized by the delegator address. 
-					unrealizedRewards - The quantity of rewards that have not been realized by the delegator address. 
-					realizingRewardBasis - The quantity of rewards by the basis cost being realized by the delegator address. 
-					unrealizedBasisRewards - The quantity of rewards by the basis cost that have not been realized by the delegator address. 
-					realizingRewardBasisDep - The quantity of rewards by the basis cost and by the supply depletion cost being realized by the delegator address.
-					unrealizedBasisRewardsDep - The quantity of rewards by the basis cost and by the supply depletion cost that have not been realized by the delegator address.
-					realizingRewardBasisMVDep - The quantity of rewards by the basis cost and by the market value depletion cost being realized by the delegator address.
-					unrealizedBasisRewardsMVDep - The quantity of rewards by the basis cost and by the market value depletion cost that have not been realized by the delegator address.
-					unrealizedRewardAgg - The sum of the unrealized rewards. 
-					unrealizedBasisAgg - The sum of the unrealized rewards by the basis cost. 
-					unrealizedDepAgg - The sum of the unrealized rewards by the basis cost and the supply deplpetion cost.
-					unrealizedMVDAgg - The sum of the unrealized rewards by the basis cost and the market value dilution cost. 
-					realizingRewardAgg - The sum of the rewards being realized by the delegator address.
-					realizingBasisAgg - The sum of the rewards by the basis cost being realized by the delegator address.
-					realizingDepAgg - The sum of the rewards by the basis cost and the supply depletion cost being realized by the delegator address.
-					realizingMVDAgg - The sum of the rewards by the basis cost and the market value dilution cost being realized by the delegator address.
-				</code>
+					realizingRewards </code> 
+					The quantity of rewards being realized by the delegator address. 
+					<code className={classes.code}>
+					unrealizedRewards </code> 
+					The quantity of rewards that have not been realized by the delegator address. 
+					<code className={classes.code}>
+					realizingRewardBasis </code> 
+					The quantity of rewards by the basis cost being realized by the delegator address. 
+					<code className={classes.code}>
+					unrealizedBasisRewards </code> 
+					The quantity of rewards by the basis cost that have not been realized by the delegator address. 
+					<code className={classes.code}>
+					realizingRewardBasisDep </code> 
+					The quantity of rewards by the basis cost and by the supply depletion cost being realized by the delegator address.
+					<code className={classes.code}>
+					unrealizedBasisRewardsDep </code> 
+					The quantity of rewards by the basis cost and by the supply depletion cost that have not been realized by the delegator address.
+					<code className={classes.code}>
+					realizingRewardBasisMVDep </code> 
+					The quantity of rewards by the basis cost and by the market value depletion cost being realized by the delegator address.
+					<code className={classes.code}>
+					unrealizedBasisRewardsMVDep </code> 
+					The quantity of rewards by the basis cost and by the market value depletion cost that have not been realized by the delegator address.
+					<code className={classes.code}>
+					unrealizedRewardAgg </code> 
+					The sum of the unrealized rewards. 
+					<code className={classes.code}>
+					unrealizedBasisAgg </code> 
+					The sum of the unrealized rewards by the basis cost. 
+					<code className={classes.code}>
+					unrealizedDepAgg </code> 
+					The sum of the unrealized rewards by the basis cost and the supply deplpetion cost.
+					<code className={classes.code}>
+					unrealizedMVDAgg </code> 
+					The sum of the unrealized rewards by the basis cost and the market value dilution cost. 
+					<code className={classes.code}>
+					realizingRewardAgg </code> 
+					The sum of the rewards being realized by the delegator address.
+					<code className={classes.code}>
+					realizingBasisAgg </code> 
+					The sum of the rewards by the basis cost being realized by the delegator address.
+					<code className={classes.code}>
+					realizingDepAgg </code> 
+					The sum of the rewards by the basis cost and the supply depletion cost being realized by the delegator address.
+					<code className={classes.code}>
+					realizingMVDAgg </code> 
+					The sum of the rewards by the basis cost and the market value dilution cost being realized by the delegator address.
 				<h3 className={classes.EndPoint}>
 					Payload Staking Basis Properties
 				</h3>
 				<code className={classes.code}>
-					realizingXTZbasis - The quantity of the staking basis being realized by the delegator address.
-					realizingBasisP - The quantity of the staking basis by the basis cost being realized by the delegator address.
-					realizingBasisDep - The quantity of the staking basis by the basis cost and by the supply depletion cost being realized by the delegator address.
-					realizingBasisMVDep - The quantity of the staking basis by the basis cost and by the market value dilution cost being realized by the user.
-					unrealizedXTZBasis - The quantity of the staking basis not being realized by the delegator address.
-					unrealizedBasisP - The quantity of the staking basis by the basis cost not being realized by the delegator address.
-					unrealizedBasisDep - The quantity of the staking basis by the basis cost and by the supply depletion cost not being realized by the delegator address.
-					unrealizedBasisMVDep - The quantity of the staking basis by the basis cost and by the market value dilution cost not being realized by the delegator address.
-				</code>
+					realizingXTZbasis </code> 
+					The quantity of the staking basis being realized by the delegator address.
+					<code className={classes.code}>
+					realizingBasisP </code> 
+					The quantity of the staking basis by the basis cost being realized by the delegator address.
+					<code className={classes.code}>
+					realizingBasisDep </code> 
+					The quantity of the staking basis by the basis cost and by the supply depletion cost being realized by the delegator address.
+					<code className={classes.code}>
+					realizingBasisMVDep </code> 
+					The quantity of the staking basis by the basis cost and by the market value dilution cost being realized by the user.
+					<code className={classes.code}>
+					unrealizedXTZBasis </code> 
+					The quantity of the staking basis not being realized by the delegator address.
+					<code className={classes.code}>
+					unrealizedBasisP </code> 
+					The quantity of the staking basis by the basis cost not being realized by the delegator address.
+					<code className={classes.code}>
+					unrealizedBasisDep </code> 
+					The quantity of the staking basis by the basis cost and by the supply depletion cost not being realized by the delegator address.
+					<code className={classes.code}>
+					unrealizedBasisMVDep </code> 
+					The quantity of the staking basis by the basis cost and by the market value dilution cost not being realized by the delegator address.
 				<h3 className={classes.EndPoint}>
 					Payload Accounting Analysis Parameter Properties
 				</h3>
 				<code className={classes.code}>
-					address - The delegating address. 
-					basisPrice - The calculated staking basis price.
-					fiat - The fiat currency. 
-				</code>
+					address </code> 
+					The delegating address. 
+					<code className={classes.code}>
+					basisPrice </code> 
+					The calculated staking basis price.
+					<code className={classes.code}>
+					fiat </code> 
+					The fiat currency. 
 
 			</div>
 		</div>
