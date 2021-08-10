@@ -28,6 +28,7 @@ const API = () => {
 				<code className={classes.code}>
 					unrealizedRewards </code> 
 					The unrealized reward set of the delegator address.
+					{"/n"}
 					<code className={classes.code}>
 					unrealizedBasisRewards </code> 
 					The unrealized reward set by the basis cost of the delegator address.
