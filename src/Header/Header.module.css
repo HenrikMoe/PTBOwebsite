@@ -43,12 +43,12 @@
 	color: var(--dark-gray);
 	font-weight: 500;
 
-	font-size: 1.3em;
+	font-size: 1.3rem;
 }
 
 /* Nav Link styles */
 .NavGroup {
-	font-size: 1.3em;
+	font-size: 1.3rem;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -58,7 +58,7 @@
 	text-decoration: none;
 	/* color: white; */
 	color: var(--gray);
-	font-size: 0.8em;
+	font-size: 1rem;
 	padding: 20px;
 	border-bottom: transparent solid 2px;
 }
@@ -101,7 +101,7 @@
 }
 
 .Title {
-	font-size: 1em;
+	font-size: 1.1rem;
 	color: var(--dark-gray);
 	width: fit-content;
 	letter-spacing: 0.3;
@@ -117,7 +117,7 @@
 
 .Description {
 	width: 50%;
-	font-size: 0.9em;
+	font-size: 0.9rem;
 	margin-top: 5px;
 	margin-bottom: 15px;
 	font-weight: 400;
@@ -133,7 +133,7 @@
 }
 .ContactLink {
 	margin-left: 10px;
-	font-size: 1.3em;
+	font-size: 1.3rem;
 	color: var(--dark-gray);
 	text-decoration: none;
 	width: 10%;
@@ -183,7 +183,7 @@
 	}
 
 	.NavLink {
-		font-size: 0.8em;
+		font-size: 0.8rem;
 	}
 }
 

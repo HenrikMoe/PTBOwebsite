@@ -11,6 +11,12 @@
 
 .code {
 	font-size: 16px;
+	color: rgb(32, 10, 32);
+	font-weight: 500;
+	background-color: rgb(243, 243, 243);
+	border-radius: 5px;
+	margin: 5px;
+	padding: 5px 0px 5px 5px;
 }
 
 .HR {
