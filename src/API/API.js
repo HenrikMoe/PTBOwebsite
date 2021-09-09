@@ -6,88 +6,20 @@ const API = () => {
 		<div className={classes.APIWrapper}>
 			<div className={classes.API}>
 				<h1 className={classes.Header}>
-					Developer API
+					CryptoCount Developer API
 					<hr className={classes.HR} />
 				</h1>
-				<h2 className={classes.EP}>HTTP Endpoints</h2>
-				<h3 className={classes.EndPoint}>
-					Automatic Delegator Address Fiat Book Value Analysis
-				</h3>
+				<h2 className={classes.EP}> 1) Tezos Delegator Reward Book Value With Basis Price Calculated While Realizing Quantity Of XTZ </h2>
+				<h3 className={classes.EndPoint}>Base URL</h3>
 				<code className={classes.code}>
-					portaltoblockchain.org/CryptoCount/Analysis/Tezos/Auto
+					api.portaltoblockchain.org/Analysis/Tezos/AutoRealize
 				</code>
-				<div className={classes.Name}>Query Parameters</div>
+				<h3 className={classes.EndPoint}>URL Paramters</h3>
 				<code className={classes.code}>
 					?address=${"{"}address{"}"}&fiat=${"{"}fiat{"}"}
+					&realizingQuantity=${"{"}realizingQuantity{"}"}
 				</code>
-				*where fiat is the three letter representation of your country's
-				fiat
-				<h3 className={classes.EndPoint}>Payload Properties</h3>
-				<code className={classes.code}>unrealizedRewards </code>
-				The unrealized reward set of the delegator address.
-				<br />
-				<br />
-				<code className={classes.code}>unrealizedBasisRewards </code>
-				The unrealized reward set by the basis cost of the delegator
-				address.
-				<br />
-				<br />
-				<code className={classes.code}>unrealizedBasisRewardsDep </code>
-				The unrealized reward set by the basis cost and the supply
-				depletion cost of the delegator address.
-				<br />
-				<br />
-				<code className={classes.code}>
-					unrealizedBasisRewardsMVDep{" "}
-				</code>
-				The unrealized reward set by the basis cost and the market value
-				dilution cost of the delegator address.
-				<br />
-				<br />
-				<code className={classes.code}>address </code>
-				The delegator address.
-				<br />
-				<br />
-				<code className={classes.code}>fiat </code>
-				The fiat currency.
-				<br />
-				<br />
-				<code className={classes.code}>basisPrice </code>
-				The calcualted basis cost.
-				<br />
-				<br />
-				<code className={classes.code}>xtzBasis </code>
-				The staking basis.
-				<br />
-				<br />
-				<code className={classes.code}>basisP </code>
-				The staking basis by the basis cost.
-				<br />
-				<br />
-				<code className={classes.code}>basisDep </code>
-				The staking basis by the basis cost and by the supply depletion
-				cost.
-				<br />
-				<br />
-				<code className={classes.code}>basisMVdep </code>
-				The staking basis by the basis cost and by the market value
-				dilution cost.
-				<br />
-				<br />
-				<hr />
-				<h3 className={classes.EndPoint}>
-					Automatic Delegator Address Analysis While Realizing
-					Quantity Of XTZ
-				</h3>
-				<code className={classes.code}>
-					portaltoblockchain.org/CryptoCount/Analysis/Tezos/AutoRealizing
-				</code>
-				<div className={classes.Name}>Query Parameters</div>
-				<code className={classes.code}>
-					?address=${"{"}address{"}"}&fiat=${"{"}fiat{"}"}
-					&quantityRealizing=${"{"}quantityRealizing{"}"}
-				</code>
-				<h3 className={classes.EndPoint}>Payload Reward Properties</h3>
+				<h3 className={classes.EndPoint}>Return Properties</h3>
 				<code className={classes.code}>realizingRewards </code>
 				The quantity of rewards being realized by the delegator address.
 				<br />
@@ -168,9 +100,9 @@ const API = () => {
 				dilution cost being realized by the delegator address.
 				<br />
 				<br />
-				<h3 className={classes.EndPoint}>
-					Payload Staking Basis Properties
-				</h3>
+				<div className={classes.EndPoint}>
+					Staking Basis Properties:
+				</div>
 				<code className={classes.code}>realizingXTZbasis </code>
 				The quantity of the staking basis being realized by the
 				delegator address.
@@ -213,9 +145,9 @@ const API = () => {
 				address.
 				<br />
 				<br />
-				<h3 className={classes.EndPoint}>
-					Payload Accounting Analysis Parameter Properties
-				</h3>
+				<div className={classes.EndPoint}>
+					Analysis Parameters:
+				</div>
 				<code className={classes.code}>address </code>
 				The delegating address.
 				<br />
@@ -228,6 +160,69 @@ const API = () => {
 				The fiat currency.
 				<br />
 				<br />
+				<hr />
+				<h2 className={classes.EP}>2) Tezos Delegator Reward Book Value With Basis Price Calculated </h2>
+				<h3 className={classes.EndPoint}>Base URL</h3>
+				<code className={classes.code}>
+					api.portaltoblockchain.org/Analysis/Tezos/Auto
+				</code>
+				<h3 className={classes.EndPoint}>URL Parameters</h3>
+				<code className={classes.code}>
+					?address=${"{"}address{"}"}&fiat=${"{"}fiat{"}"}
+				</code>
+				<h3 className={classes.EndPoint}>Return Properties</h3>
+				<code className={classes.code}>unrealizedRewards </code>
+				The unrealized reward set of the delegator address.
+				<br />
+				<br />
+				<code className={classes.code}>unrealizedBasisRewards </code>
+				The unrealized reward set by the basis cost of the delegator
+				address.
+				<br />
+				<br />
+				<code className={classes.code}>unrealizedBasisRewardsDep </code>
+				The unrealized reward set by the basis cost and the supply
+				depletion cost of the delegator address.
+				<br />
+				<br />
+				<code className={classes.code}>
+					unrealizedBasisRewardsMVDep{" "}
+				</code>
+				The unrealized reward set by the basis cost and the market value
+				dilution cost of the delegator address.
+				<br />
+				<br />
+				<code className={classes.code}>address </code>
+				The delegator address.
+				<br />
+				<br />
+				<code className={classes.code}>fiat </code>
+				The fiat currency.
+				<br />
+				<br />
+				<code className={classes.code}>basisPrice </code>
+				The calcualted basis cost.
+				<br />
+				<br />
+				<code className={classes.code}>xtzBasis </code>
+				The staking basis.
+				<br />
+				<br />
+				<code className={classes.code}>basisP </code>
+				The staking basis by the basis cost.
+				<br />
+				<br />
+				<code className={classes.code}>basisDep </code>
+				The staking basis by the basis cost and by the supply depletion
+				cost.
+				<br />
+				<br />
+				<code className={classes.code}>basisMVdep </code>
+				The staking basis by the basis cost and by the market value
+				dilution cost.
+				<br />
+				<br />
+				
 			</div>
 		</div>
 	);
