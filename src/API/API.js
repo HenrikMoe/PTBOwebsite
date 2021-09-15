@@ -38,13 +38,67 @@ const API = () => {
 				The quantity of rewards being realized by the delegator address.
 				<br />
 				<br />
-				<code className={classes.code}>unrealizedRewards </code>
-				The quantity of rewards that have not been realized by the
+
+				<code className={classes.code}>realizingRewardBasis </code>
+				The quantity of rewards by the basis cost being realized by the
 				delegator address.
 				<br />
 				<br />
-				<code className={classes.code}>realizingRewardBasis </code>
-				The quantity of rewards by the basis cost being realized by the
+				
+				<code className={classes.code}>realizingRewardBasisDep </code>
+				The quantity of rewards by the basis cost and by the supply
+				depletion cost being realized by the delegator address.
+				<br />
+				<br />
+				
+				<code className={classes.code}>realizingRewardBasisMVDep </code>
+				The quantity of rewards by the basis cost and by the market
+				value depletion cost being realized by the delegator address.
+				<br />
+				<br />
+				
+				<code className={classes.code}>realizingRewardAgg </code>
+				The sum of the rewards being realized by the delegator address.
+				<br />
+				<br />
+				<code className={classes.code}>realizingBasisAgg </code>
+				The sum of the rewards by the basis cost being realized by the
+				delegator address.
+				<br />
+				<br />
+				<code className={classes.code}>realizingDepAgg </code>
+				The sum of the rewards by the basis cost and the supply
+				depletion cost being realized by the delegator address.
+				<br />
+				<br />
+				<code className={classes.code}>realizingMVDAgg </code>
+				The sum of the rewards by the basis cost and the market value
+				dilution cost being realized by the delegator address.
+				<br />
+				<br />
+				
+				<code className={classes.code}>realizingXTZbasis </code>
+				The quantity of the staking basis being realized by the
+				delegator address.
+				<br />
+				<br />
+				<code className={classes.code}>realizingBasisP </code>
+				The quantity of the staking basis by the basis cost being
+				realized by the delegator address.
+				<br />
+				<br />
+				<code className={classes.code}>realizingBasisDep </code>
+				The quantity of the staking basis by the basis cost and by the
+				supply depletion cost being realized by the delegator address.
+				<br />
+				<br />
+				<code className={classes.code}>realizingBasisMVDep </code>
+				The quantity of the staking basis by the basis cost and by the
+				market value dilution cost being realized by the user.
+				<br />
+				<br />
+				<code className={classes.code}>unrealizedRewards </code>
+				The quantity of rewards that have not been realized by the
 				delegator address.
 				<br />
 				<br />
@@ -53,24 +107,15 @@ const API = () => {
 				realized by the delegator address.
 				<br />
 				<br />
-				<code className={classes.code}>realizingRewardBasisDep </code>
-				The quantity of rewards by the basis cost and by the supply
-				depletion cost being realized by the delegator address.
-				<br />
-				<br />
+
 				<code className={classes.code}>unrealizedBasisRewardsDep </code>
 				The quantity of rewards by the basis cost and by the supply
 				depletion cost that have not been realized by the delegator
 				address.
 				<br />
 				<br />
-				<code className={classes.code}>realizingRewardBasisMVDep </code>
-				The quantity of rewards by the basis cost and by the market
-				value depletion cost being realized by the delegator address.
-				<br />
-				<br />
 				<code className={classes.code}>
-					unrealizedBasisRewardsMVDep{" "}
+					unrealizedBasisRewardsMVDep
 				</code>
 				The quantity of rewards by the basis cost and by the market
 				value depletion cost that have not been realized by the
@@ -95,48 +140,6 @@ const API = () => {
 				market value dilution cost.
 				<br />
 				<br />
-				<code className={classes.code}>realizingRewardAgg </code>
-				The sum of the rewards being realized by the delegator address.
-				<br />
-				<br />
-				<code className={classes.code}>realizingBasisAgg </code>
-				The sum of the rewards by the basis cost being realized by the
-				delegator address.
-				<br />
-				<br />
-				<code className={classes.code}>realizingDepAgg </code>
-				The sum of the rewards by the basis cost and the supply
-				depletion cost being realized by the delegator address.
-				<br />
-				<br />
-				<code className={classes.code}>realizingMVDAgg </code>
-				The sum of the rewards by the basis cost and the market value
-				dilution cost being realized by the delegator address.
-				<br />
-				<br />
-				<div className={classes.EndPoint}>
-					Staking Basis Properties:
-				</div>
-				<code className={classes.code}>realizingXTZbasis </code>
-				The quantity of the staking basis being realized by the
-				delegator address.
-				<br />
-				<br />
-				<code className={classes.code}>realizingBasisP </code>
-				The quantity of the staking basis by the basis cost being
-				realized by the delegator address.
-				<br />
-				<br />
-				<code className={classes.code}>realizingBasisDep </code>
-				The quantity of the staking basis by the basis cost and by the
-				supply depletion cost being realized by the delegator address.
-				<br />
-				<br />
-				<code className={classes.code}>realizingBasisMVDep </code>
-				The quantity of the staking basis by the basis cost and by the
-				market value dilution cost being realized by the user.
-				<br />
-				<br />
 				<code className={classes.code}>unrealizedXTZBasis </code>
 				The quantity of the staking basis not being realized by the
 				delegator address.
@@ -159,6 +162,9 @@ const API = () => {
 				address.
 				<br />
 				<br />
+
+				
+				
 				<div className={classes.EndPoint}>
 					Analysis Parameters:
 				</div>
@@ -210,7 +216,7 @@ const API = () => {
 				<br />
 				<br />
 				<code className={classes.code}>
-					unrealizedBasisRewardsMVDep{" "}
+					unrealizedBasisRewardsMVDep
 				</code>
 				The unrealized reward set by the basis cost and the market value
 				dilution cost of the delegator address.
