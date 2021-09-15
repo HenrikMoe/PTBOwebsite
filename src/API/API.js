@@ -19,6 +19,20 @@ const API = () => {
 					?address=${"{"}address{"}"}&fiat=${"{"}fiat{"}"}
 					&realizingQuantity=${"{"}realizingQuantity{"}"}
 				</code>
+				<br />
+				<br />
+				<code className={classes.code}>address </code>
+				Tezos delegator address.
+				<br />
+				<br />
+				<code className={classes.code}>fiat </code>
+				Three letter country fiat abrevaition, ex USD.
+				<br />
+				<br />
+				<code className={classes.code}>realizingQuantity </code>
+				The quantity of Tezos (XTZ) that the delegator is selling. 
+				<br />
+				<br />
 				<h3 className={classes.EndPoint}>Return Properties</h3>
 				<code className={classes.code}>realizingRewards </code>
 				The quantity of rewards being realized by the delegator address.
@@ -170,6 +184,16 @@ const API = () => {
 				<code className={classes.code}>
 					?address=${"{"}address{"}"}&fiat=${"{"}fiat{"}"}
 				</code>
+				<br />
+				<br />
+				<code className={classes.code}>address </code>
+				Tezos delegator address.
+				<br />
+				<br />
+				<code className={classes.code}>fiat </code>
+				Three letter country fiat abrevaition, ex USD.
+				<br />
+				<br />
 				<h3 className={classes.EndPoint}>Return Properties</h3>
 				<code className={classes.code}>unrealizedRewards </code>
 				The unrealized reward set of the delegator address.
