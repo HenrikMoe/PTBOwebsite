@@ -6,6 +6,8 @@ import CryptoCount from "./BlogPosts/CryptoCount";
 import API from "./API/API";
 import Literature from "./Literature/Literature";
 import Home from "./Home/Home";
+import Client from "./Client/Client"
+import Privacy from "./Privacy/Privacy"
 
 const App = () => {
 	return (
@@ -25,6 +27,16 @@ const App = () => {
 							path="/literature"
 							exact
 							component={Literature}
+						/>
+						<Route
+							path="/Client"
+							exact
+							component={Client}
+						/>
+							<Route
+							path="/Privacy"
+							exact
+							component={Privacy}
 						/>
 					</Switch>
 				</div>

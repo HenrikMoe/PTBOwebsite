@@ -42,13 +42,31 @@ const Header = () => {
 							web-based app that counts block rewards.
 						</p>
 					</NavLink> */}
+						<NavLink
+						className={classes.WindowLink}
+						to="/client"
+						onClick={handleHoverLeave}
+					>
+						<div className={classes.Title}>Client Module</div>
+						<p className={classes.Description}>Front End Integation</p>
+					</NavLink>
+					<hr />
 					<NavLink
 						className={classes.WindowLink}
 						to="/api"
 						onClick={handleHoverLeave}
 					>
-						<div className={classes.Title}>Developer API</div>
+						<div className={classes.Title}>API</div>
 						<p className={classes.Description}>API documentation</p>
+					</NavLink>
+					<hr />
+					<NavLink
+						className={classes.WindowLink}
+						to="/privacy"
+						onClick={handleHoverLeave}
+					>
+						<div className={classes.Title}>Privacy</div>
+						<p className={classes.Description}>Privacy Policy</p>
 					</NavLink>
 					<hr />
 					<NavLink
