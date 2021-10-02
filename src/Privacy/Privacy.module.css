@@ -1,8 +1,9 @@
 .APIWrapper {
-	display: flex;
 	justify-content: center;
 	margin-top: 100px;
 	color: var(--gray);
+	padding: 20px 80px 80px 80px;
+
 }
 
 .API {

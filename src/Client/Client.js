@@ -1,5 +1,7 @@
 import React from "react";
 import classes from "./Client.module.css";
+import video from '../Videos/ClientModuleDemo.mp4'
+
 
 const Client = () => {
 	return (
@@ -9,46 +11,44 @@ const Client = () => {
 					CryptoCount Developer Client Module
 					<hr className={classes.HR} />
 				</h1>
-				<h2 className={classes.EP}> Integrate CryptoCount Into Your Frontend React. </h2>
-				<h3 className={classes.EndPoint}>Install Dependencies</h3>
-				<code className={classes.code}>
-					npm install axios
-                    npm install jspdf
-				</code>
-				<h3 className={classes.EndPoint}>Add Imports To Component</h3>
-				<code className={classes.code}>
-					import jspdf from 'jspdf'
-                    import axios from 'axois'
-				</code>
-				<br />
-				<br />
-                <h3 className={classes.EndPoint}>Add Realize Reward + PDF Income Statement Function</h3>
-				<code className={classes.code}>
-                function(deladdress, fiat, q realize)
-                    url = api
-                    props = axios.get(url)
-                    basisIncome = props.realizingBasisRewardAgg
-                    address = props.address
-                    fiat = props.fiat
-                    quantityRealized = props.realizingXTZAgg
-                    .then.qpdf()=>(
-                    all parameters
-                    all words
-                    all 64 bit images
-                    )
-				</code>
-				<br />
-				<br />
-                <h3 className={classes.EndPoint}>Add Field and Button To Your React DOM</h3>
-				<code className={classes.code}>
-                    Wrap
-                        Form Quantity Realized, Fiat
-                    Button Get Income
-                    Wrap
-				</code>
-				<br />
-				<br />
+				<video width="750" height="500" src={video} controls >
+				</video>
+
+				<h2 className={classes.EP}> Integrate CryptoCount Into Your React Application. </h2>
 				
+				<h3 className={classes.EndPoint}>Component</h3>
+
+				<a href="https://github.com/PortalToBlockchainOrganization/CryptoCountClientModule/blob/master/src/components/Button/Button.jsx">React Componenet File</a>
+				
+				<br />
+				<br />
+				<h3 className={classes.EndPoint}>Install Dependencies</h3>
+				<pre>
+					<code className={classes.code}>
+						npm install axios
+						npm install jspdf
+					</code>
+				</pre>
+				<h3 className={classes.EndPoint}>Modify Functional Dependencies With Your App's User Data</h3>
+				<pre>
+					User Delegation Address Line 25
+					<code className={classes.code} >
+					const address = 'tz1cgrzpsB43pBppH6mJzrHnFqxU8RUce991'					</code>
+					<br />
+					<br />
+					User Country
+					<code className={classes.code} >
+					const fiat = 'USD'
+					</code>
+					<br />
+					<br />
+					User Information
+					<code className={classes.code} >
+					const firstName = "John"
+					const lastName = "Doh"
+					const email= "johnDoh@gmail.com"
+					</code>
+				</pre>
 				
 			</div>
 		</div>
