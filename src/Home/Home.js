@@ -22,7 +22,7 @@ const Home = () => {
 					</h2>
 					<text className={classes.Sub}>
 						We specialize in blockchain interfacing
-						applications.
+						applications. Bringing blockchain to people.
 					</text>
 				</div>
 				<Lottie

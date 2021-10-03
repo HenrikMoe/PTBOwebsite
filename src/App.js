@@ -8,6 +8,7 @@ import Literature from "./Literature/Literature";
 import Home from "./Home/Home";
 import Client from "./Client/Client"
 import Privacy from "./Privacy/Privacy"
+import About from "./About/About"
 
 const App = () => {
 	return (
@@ -22,6 +23,7 @@ const App = () => {
 							exact
 							component={CryptoCount}
 						/>
+						<Route path="/about" exact component={About} />
 						<Route path="/api" exact component={API} />
 						<Route
 							path="/literature"

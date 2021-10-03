@@ -42,6 +42,15 @@ const Header = () => {
 							web-based app that counts block rewards.
 						</p>
 					</NavLink> */}
+					<NavLink
+						className={classes.WindowLink}
+						to="/about"
+						onClick={handleHoverLeave}
+					>
+						<div className={classes.Title}>About</div>
+						<p className={classes.Description}>About CryptoCount</p>
+					</NavLink>
+					<hr />
 						<NavLink
 						className={classes.WindowLink}
 						to="/client"
@@ -78,17 +87,6 @@ const Header = () => {
 						<p className={classes.Description}>Resourses.....</p>
 					</NavLink>
 					<hr />
-					<a
-						className={classes.WindowLink}
-						href=""
-						target="_blank"
-						rel="noreferrer"
-						onClick={handleHoverLeave}
-						disabled
-					>
-						<div className={classes.Title}>Download Links</div>
-					</a>
-					<hr />
 				</div>
 			</div>
 		);
@@ -110,7 +108,7 @@ const Header = () => {
 						<div className={classes.ContactForm}>
 							<MailOutlineIcon className={classes.Icon} />
 							<a
-								href="mailto:test@gmail.com"
+								href="mailto:portaltoblockchain@gmail.com"
 								className={classes.ContactLink}
 							>
 								Email
@@ -119,7 +117,7 @@ const Header = () => {
 						<div className={classes.ContactForm}>
 							<GitHubIcon className={classes.Icon} />
 							<a
-								href="https://github.com/HenrikMoe?tab=repositories"
+								href="https://github.com/PortalToBlockchainOrganization"
 								target="_blank"
 								rel="noreferrer"
 								className={classes.ContactLink}
