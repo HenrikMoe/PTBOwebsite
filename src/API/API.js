@@ -21,99 +21,112 @@ const API = () => {
 				</code>
 				<br />
 				<br />
+				Type: String
 				<code className={classes.code}>address </code>
 				Tezos delegator address.
 				<br />
 				<br />
+				Type: String 
 				<code className={classes.code}>fiat </code>
 				Three letter country fiat abrevaition, ex USD.
 				<br />
 				<br />
+				Type: Int
 				<code className={classes.code}>realizingQuantity </code>
 				The quantity of Tezos (XTZ) that the delegator is selling. 
 				<br />
 				<br />
 				<h3 className={classes.EndPoint}>Return Properties</h3>
+				Type: Array
 				<code className={classes.code}>realizingRewards </code>
 				The quantity of rewards being realized by the delegator address.
 				<br />
 				<br />
-
+				Type: Array
 				<code className={classes.code}>realizingRewardBasis </code>
 				The quantity of rewards by the basis cost being realized by the
 				delegator address.
 				<br />
 				<br />
-				
+				Type: Array
 				<code className={classes.code}>realizingRewardBasisDep </code>
 				The quantity of rewards by the basis cost and by the supply
 				depletion cost being realized by the delegator address.
 				<br />
 				<br />
-				
+				Type: Array
 				<code className={classes.code}>realizingRewardBasisMVDep </code>
 				The quantity of rewards by the basis cost and by the market
 				value depletion cost being realized by the delegator address.
 				<br />
 				<br />
-				
+				Type: Float
 				<code className={classes.code}>realizingRewardAgg </code>
 				The sum of the rewards being realized by the delegator address.
 				<br />
 				<br />
+				Type: Float
 				<code className={classes.code}>realizingBasisAgg </code>
 				The sum of the rewards by the basis cost being realized by the
 				delegator address.
 				<br />
 				<br />
+				Type: Float
 				<code className={classes.code}>realizingDepAgg </code>
 				The sum of the rewards by the basis cost and the supply
 				depletion cost being realized by the delegator address.
 				<br />
 				<br />
+				Type: Float
 				<code className={classes.code}>realizingMVDAgg </code>
 				The sum of the rewards by the basis cost and the market value
 				dilution cost being realized by the delegator address.
 				<br />
 				<br />
-				
+				Type: Float
 				<code className={classes.code}>realizingXTZbasis </code>
 				The quantity of the staking basis being realized by the
 				delegator address.
 				<br />
 				<br />
+				Type: Float
 				<code className={classes.code}>realizingBasisP </code>
 				The quantity of the staking basis by the basis cost being
 				realized by the delegator address.
 				<br />
 				<br />
+				Type: Float
 				<code className={classes.code}>realizingBasisDep </code>
 				The quantity of the staking basis by the basis cost and by the
 				supply depletion cost being realized by the delegator address.
 				<br />
 				<br />
+				Type: Float
 				<code className={classes.code}>realizingBasisMVDep </code>
 				The quantity of the staking basis by the basis cost and by the
 				market value dilution cost being realized by the user.
 				<br />
 				<br />
+				Type: Array.
 				<code className={classes.code}>unrealizedRewards </code>
 				The quantity of rewards that have not been realized by the
 				delegator address.
 				<br />
 				<br />
+				Type: Array.
 				<code className={classes.code}>unrealizedBasisRewards </code>
 				The quantity of rewards by the basis cost that have not been
 				realized by the delegator address.
 				<br />
 				<br />
-
+				Type: Array.
 				<code className={classes.code}>unrealizedBasisRewardsDep </code>
 				The quantity of rewards by the basis cost and by the supply
 				depletion cost that have not been realized by the delegator
 				address.
 				<br />
 				<br />
+				Type: Array.
 				<code className={classes.code}>
 					unrealizedBasisRewardsMVDep
 				</code>
@@ -122,40 +135,48 @@ const API = () => {
 				delegator address.
 				<br />
 				<br />
+				Type: Float
 				<code className={classes.code}>unrealizedRewardAgg </code>
 				The sum of the unrealized rewards.
 				<br />
 				<br />
+				Type: Float
 				<code className={classes.code}>unrealizedBasisAgg </code>
 				The sum of the unrealized rewards by the basis cost.
 				<br />
 				<br />
+				Type: Float
 				<code className={classes.code}>unrealizedDepAgg </code>
 				The sum of the unrealized rewards by the basis cost and the
 				supply deplpetion cost.
 				<br />
 				<br />
+				Type: Float
 				<code className={classes.code}>unrealizedMVDAgg </code>
 				The sum of the unrealized rewards by the basis cost and the
 				market value dilution cost.
 				<br />
 				<br />
+				Type: Float
 				<code className={classes.code}>unrealizedXTZBasis </code>
 				The quantity of the staking basis not being realized by the
 				delegator address.
 				<br />
 				<br />
+				Type: Float
 				<code className={classes.code}>unrealizedBasisP </code>
 				The quantity of the staking basis by the basis cost not being
 				realized by the delegator address.
 				<br />
 				<br />
+				Type: Float
 				<code className={classes.code}>unrealizedBasisDep </code>
 				The quantity of the staking basis by the basis cost and by the
 				supply depletion cost not being realized by the delegator
 				address.
 				<br />
 				<br />
+				Type: Float
 				<code className={classes.code}>unrealizedBasisMVDep </code>
 				The quantity of the staking basis by the basis cost and by the
 				market value dilution cost not being realized by the delegator
@@ -165,21 +186,7 @@ const API = () => {
 
 				
 				
-				<div className={classes.EndPoint}>
-					Analysis Parameters:
-				</div>
-				<code className={classes.code}>address </code>
-				The delegating address.
-				<br />
-				<br />
-				<code className={classes.code}>basisPrice </code>
-				The calculated staking basis price.
-				<br />
-				<br />
-				<code className={classes.code}>fiat </code>
-				The fiat currency.
-				<br />
-				<br />
+		
 				<hr />
 				<h2 className={classes.EP}>2) Tezos Delegator Reward Book Value With Basis Price Calculated </h2>
 				<h3 className={classes.EndPoint}>Base URL</h3>
@@ -192,29 +199,35 @@ const API = () => {
 				</code>
 				<br />
 				<br />
+				Type: String
 				<code className={classes.code}>address </code>
 				Tezos delegator address.
 				<br />
 				<br />
+				Type: String
 				<code className={classes.code}>fiat </code>
 				Three letter country fiat abrevaition, ex USD.
 				<br />
 				<br />
 				<h3 className={classes.EndPoint}>Return Properties</h3>
+				Type: Array
 				<code className={classes.code}>unrealizedRewards </code>
 				The unrealized reward set of the delegator address.
 				<br />
 				<br />
+				Type: Array
 				<code className={classes.code}>unrealizedBasisRewards </code>
 				The unrealized reward set by the basis cost of the delegator
 				address.
 				<br />
 				<br />
+				Type: Array
 				<code className={classes.code}>unrealizedBasisRewardsDep </code>
 				The unrealized reward set by the basis cost and the supply
 				depletion cost of the delegator address.
 				<br />
 				<br />
+				Type: Array
 				<code className={classes.code}>
 					unrealizedBasisRewardsMVDep
 				</code>
@@ -222,31 +235,38 @@ const API = () => {
 				dilution cost of the delegator address.
 				<br />
 				<br />
+				Type: String
 				<code className={classes.code}>address </code>
 				The delegator address.
 				<br />
 				<br />
+				Type: String
 				<code className={classes.code}>fiat </code>
 				The fiat currency.
 				<br />
 				<br />
+				Type: Float
 				<code className={classes.code}>basisPrice </code>
 				The calcualted basis cost.
 				<br />
 				<br />
+				Type: Float
 				<code className={classes.code}>xtzBasis </code>
 				The staking basis.
 				<br />
 				<br />
+				Type: Float
 				<code className={classes.code}>basisP </code>
 				The staking basis by the basis cost.
 				<br />
 				<br />
+				Type: Float
 				<code className={classes.code}>basisDep </code>
 				The staking basis by the basis cost and by the supply depletion
 				cost.
 				<br />
 				<br />
+				Type: Float
 				<code className={classes.code}>basisMVdep </code>
 				The staking basis by the basis cost and by the market value
 				dilution cost.
