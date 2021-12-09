@@ -22,7 +22,7 @@ const Home = () => {
 					</h2>
 					<text className={classes.Sub}>
 						We build open source blockchain interfacing
-						applications.
+						software.
 					</text>
 				</div>
 				<Lottie
