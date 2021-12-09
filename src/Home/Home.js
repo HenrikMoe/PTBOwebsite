@@ -21,7 +21,7 @@ const Home = () => {
 						The Portal To Blockchain Organization (PTBO)
 					</h2>
 					<text className={classes.Sub}>
-						We build open source blockchain interfacing
+						We build open source blockchain
 						software.
 					</text>
 				</div>
