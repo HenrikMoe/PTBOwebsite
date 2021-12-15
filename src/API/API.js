@@ -9,7 +9,7 @@ const API = () => {
 					CryptoCount Developer API
 					<hr className={classes.HR} />
 				</h1>
-				<h2 className={classes.EP}> 1) Tezos Delegator Reward Book Value With Basis Price Calculated While Realizing Quantity Of XTZ </h2>
+				<h2 className={classes.EP}> 1) Tezos Delegator Reward Realization </h2>
 				<h3 className={classes.EndPoint}>Base URL</h3>
 				<code className={classes.code}>
 					api.portaltoblockchain.org/Analysis/Tezos/AutoRealize
@@ -188,7 +188,7 @@ const API = () => {
 				
 		
 				<hr />
-				<h2 className={classes.EP}>2) Tezos Delegator Reward Book Value With Basis Price Calculated </h2>
+				<h2 className={classes.EP}>2) Tezos Delegator Reward Book Value </h2>
 				<h3 className={classes.EndPoint}>Base URL</h3>
 				<code className={classes.code}>
 					api.portaltoblockchain.org/Analysis/Tezos/Auto

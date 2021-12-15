@@ -19,31 +19,29 @@ const About = () => {
 				
 					<hr className={classes.HR} />
 				</h1>
+                  <br />
+				<br />
+		CryptoCount supplies tax optimized financial data and accounting services for Tezos block reward delegators.				
                 <br />
 				<br />
-                CryptoCount delivers income statements to block reward holders, offering an accounting interface for users to visualize their block rewards.
+		The website visualizes block rewards and delivers income statements to users.	
+		<br />
+				<br />
+                Statements are generated when a user selects a quantity of rewards to realize.
                 <br />
 				<br />
-                The statements are generated when a user selects a quantity of rewards to realize.
+                CryptoCount supports 40 countries and 1 blockchain. 
                 <br />
 				<br />
-                The downloadable statements can be delivered to authorities for tax reporting. 
+                Downloadable statements can be delivered to authorities for tax reporting. 
                 <br />
 				<br />
-                The CryptoCount project supports integration to an existing app. The one-click react component is in the <a href="/client">Client Module</a> section of this site. 
+                This project supports data integration to an existing app. Pre-built react components and API documentation are located in the <a href="https://www.portaltoblockchain.org/about">Client Module</a> and <a href="https://www.portaltoblockchain.org/api">API</a> sections of this site. 
                 <br />
 				<br />
-                CryptoCount currently supplies financial data and accounting services to Tezos block reward delegators.
+                The software was designed from literature authored by Sutherland and Landoni(2020), listed in the <a href="https://www.portaltoblockchain.org/literature">Academic Literature</a> section of this site. 
                 <br />
 				<br />
-                The software was designed from the literature by Sutherland and Landoni in the <a href="./literature">Academic Literature</a> section of this site. 
-                <br />
-				<br />
-                CryptoCount currently supports 40 countries and 1 blockchain. 
-                <br />
-				<br />
-                Contact us to if you want to supply feedback, need module integration assistance, or would like to have CryptoCount integrated into your blockchain. 
-                        
 			</div>
 		</div>
 	);
