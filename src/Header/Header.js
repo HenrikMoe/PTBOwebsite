@@ -83,8 +83,8 @@ const Header = () => {
 						to="/literature"
 						onClick={handleHoverLeave}
 					>
-						<div className={classes.Title}>Academic Literature</div>
-						<p className={classes.Description}>Resourses.....</p>
+						<div className={classes.Title}>Resourses</div>
+						<p className={classes.Description}>Academic Literature</p>
 					</NavLink>
 					<hr />
 				</div>
