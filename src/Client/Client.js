@@ -11,6 +11,10 @@ const Client = () => {
 					CryptoCount Developer Client Module
 					<hr className={classes.HR} />
 				</h1>
+				
+
+
+
 				<video width="750" height="500" src={video} controls >
 				</video>
 
