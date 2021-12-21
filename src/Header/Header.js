@@ -56,8 +56,8 @@ const Header = () => {
 						to="/client"
 						onClick={handleHoverLeave}
 					>
-						<div className={classes.Title}>Client Module</div>
-						<p className={classes.Description}>Front End Integation</p>
+						<div className={classes.Title}>Integrate CryptoCount</div>
+						<p className={classes.Description}>Data Integration For Your Front End</p>
 					</NavLink>
 					<hr />
 					<NavLink

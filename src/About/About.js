@@ -42,6 +42,8 @@ const About = () => {
                 The software was designed from literature authored by Sutherland and Landoni(2020), listed in the <a href="https://www.portaltoblockchain.org/literature">Academic Literature</a> section of this site. 
                 <br />
 				<br />
+				Visit our <a href="https://www.github.com/PortalToBlockchainOrganization">GitHub</a> and feel free to leave feature requests. 
+
 			</div>
 		</div>
 	);

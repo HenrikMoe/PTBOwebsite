@@ -8,41 +8,35 @@ const Client = () => {
 		<div className={classes.APIWrapper}>
 			<div className={classes.API}>
 				<h1 className={classes.Header}>
-					CryptoCount Client Module
+					Integrate CryptoCount
 					<hr className={classes.HR} />
 				</h1>
+				<h2 className={classes.EP}> Connect to our API to deliver tax optimzed block reward financial data to your users. </h2>
+
+				<h2 className={classes.EP}> Procedure </h2>
+
+				<h3 className={classes.EndPoint}>1) Rehearse yourself with the available data in the <a href="https://www.portaltoblockchain.org/api">API</a> section.</h3>
+				<h3 className={classes.EndPoint}>2) Connect your front end API with your desired endpoint. </h3>
+				<h3 className={classes.EndPoint}>3) If you plan to use the React-Query example below, replace the query parameters with your user's data. </h3>
+
+				
+				<h3 className={classes.EndPoint}>4) Display your users data from global state.</h3>
+
+
+				<br />
+				<br />
+				<h2 className={classes.EndPoint}>Example With React-Query and PDF Statement Download</h2>
+			
+				<h3 className={classes.EndPoint}><a href="https://github.com/PortalToBlockchainOrganization/CryptoCountClientModule/blob/master/src/components/Button/Button.jsx">GitHub - Example React Machine</a></h3>
+				<br />
+				<br />
+				<h3 className={classes.EndPoint}>Example Machine Demo.</h3>
+
 				<video width="750" height="500" src={video} controls >
 				</video>
-
-				<h2 className={classes.EP}> Integrate CryptoCount Into React Application. </h2>
-				
-				<h3 className={classes.EndPoint}>Component Example</h3>
-
-				<a href="https://github.com/PortalToBlockchainOrganization/CryptoCountClientModule/blob/master/src/components/Button/Button.jsx">React Componenet File</a>
-				
 				<br />
 				<br />
-				<h3 className={classes.EndPoint}>Install Dependencies</h3>
-				<pre>
-					<code className={classes.code}>
-						npm install axios
-						npm install jspdf
-					</code>
-				</pre>
-				<h3 className={classes.EndPoint}>Modify Dependencies With Local System State Data</h3>
-				<pre>
-					Delegation Address 
-					<code className={classes.code} >
-					const address = 'tz1cgrzpsB43pBppH6mJzrHnFqxU8RUce991'					</code>
-					<br />
-					<br />
-					Fiat Currency
-					<code className={classes.code} >
-					const fiat = 'USD'
-					</code>
-					<br />
-					<br />
-				</pre>
+				
 				
 			</div>
 		</div>
