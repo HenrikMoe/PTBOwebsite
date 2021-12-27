@@ -20,10 +20,12 @@ const Home = () => {
 					<h2 className={classes.Co}>
 						The Portal To Blockchain Organization (PTBO)
 					</h2>
-					<text className={classes.Sub}>
-						We build open source blockchain
-						software.
-					</text>
+					<h4>
+					{/* <text className={classes.Sub}> */}
+					Learn about <a href="https://www.portaltoblockchain.org/about"> CryptoCount</a>. 
+										{/* </text> */}
+					</h4>
+					
 				</div>
 				<Lottie
 					className={classes.Vid}
