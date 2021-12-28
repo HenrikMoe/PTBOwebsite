@@ -57,7 +57,7 @@ const Header = () => {
 						onClick={handleHoverLeave}
 					>
 						<div className={classes.Title}>Integrate CryptoCount</div>
-						<p className={classes.Description}>Block Reward Tax Data For Your Users</p>
+						<p className={classes.Description}>Block Reward Tax Data For Your Hosted Stakers</p>
 					</NavLink>
 					<hr />
 					<NavLink
