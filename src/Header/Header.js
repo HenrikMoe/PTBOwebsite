@@ -57,7 +57,7 @@ const Header = () => {
 						onClick={handleHoverLeave}
 					>
 						<div className={classes.Title}>Integrate CryptoCount</div>
-						<p className={classes.Description}>Data Integration For Your Front End</p>
+						<p className={classes.Description}>Data Integration For Your Users</p>
 					</NavLink>
 					<hr />
 					<NavLink
@@ -66,7 +66,7 @@ const Header = () => {
 						onClick={handleHoverLeave}
 					>
 						<div className={classes.Title}>API</div>
-						<p className={classes.Description}>API documentation</p>
+						<p className={classes.Description}>API Documentation</p>
 					</NavLink>
 					<hr />
 					<NavLink
