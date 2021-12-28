@@ -30,7 +30,7 @@ const About = () => {
                 Statements are generated when a user selects a quantity of rewards to realize.
                 <br />
 				<br />
-				Downloadable statements can be delivered to authorities for tax reporting. 
+				Downloadable statements can be delivered to authorities for income tax reporting. 
                 <br />
 				<br />
 				CryptoCount supports 40 countries and 1 blockchain. 
