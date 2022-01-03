@@ -16,16 +16,17 @@ const Client = () => {
 				<h2 className={classes.EP}> Procedure </h2>
 
 				<h3 className={classes.EndPoint}>1) Familiarize yourself with the available data in the <a href="https://www.portaltoblockchain.org/api">API</a> section.</h3>
-				<h3 className={classes.EndPoint}>2) Connect your front end API with your desired endpoint. </h3>
-				<h3 className={classes.EndPoint}>3) If you plan to use the React-Query example below, replace the query parameters with your user's data. </h3>
-
+				<h3 className={classes.EndPoint}>2) Connect your front end API with your preferred endpoint. </h3>
 				
-				<h3 className={classes.EndPoint}>4) Display your users data from global state.</h3>
+				<h3 className={classes.EndPoint}>3) Display your users data from global state.</h3>
 
 
 				<br />
 				<br />
-				<h2 className={classes.EndPoint}>Example With React-Query and PDF Statement Download</h2>
+				<h2 className={classes.EndPoint}>Example With React-Query and JSPDF Statement Download</h2>
+
+				<h3 className={classes.EndPoint}>Input your users' parameters into the query statement. </h3>
+
 			
 				<h3 className={classes.EndPoint}><a href="https://github.com/PortalToBlockchainOrganization/CryptoCountClientModule/blob/master/src/components/Button/Button.jsx">GitHub - Example React Machine</a></h3>
 				<br />
