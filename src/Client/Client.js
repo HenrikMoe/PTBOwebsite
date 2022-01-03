@@ -15,7 +15,7 @@ const Client = () => {
 
 				<h2 className={classes.EP}> Procedure </h2>
 
-				<h3 className={classes.EndPoint}>1) Rehearse yourself with the available data in the <a href="https://www.portaltoblockchain.org/api">API</a> section.</h3>
+				<h3 className={classes.EndPoint}>1) Familiarize yourself with the available data in the <a href="https://www.portaltoblockchain.org/api">API</a> section.</h3>
 				<h3 className={classes.EndPoint}>2) Connect your front end API with your desired endpoint. </h3>
 				<h3 className={classes.EndPoint}>3) If you plan to use the React-Query example below, replace the query parameters with your user's data. </h3>
 
