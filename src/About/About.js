@@ -39,7 +39,7 @@ const About = () => {
                 The project supports data integration to an existing app. Pre-built react components and API documentation are located in the <a href="https://www.portaltoblockchain.org/client">Integrate CryptoCount</a> and <a href="https://www.portaltoblockchain.org/api">API</a> sections of this site. 
                 <br />
 				<br />
-                The software was designed from economic literature authored by Sutherland and Landoni(2020), listed in the <a href="https://www.portaltoblockchain.org/literature">Academic Literature</a> section of this site. 
+                The software was derived from economic literature authored by Sutherland and Landoni(2020), listed in the <a href="https://www.portaltoblockchain.org/literature">Academic Literature</a> section of this site. 
                 <br />
 				<br />
 				Visit our <a href="https://www.github.com/PortalToBlockchainOrganization">GitHub</a> and feel free to leave feature requests. 
