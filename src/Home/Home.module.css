@@ -38,12 +38,12 @@
 	font-size: 1.5em;
 	text-transform: uppercase;
 	margin-bottom: 0px;
-	color: var(--gray);
+	color: var(--n_gray);
 }
 
 .Sub {
 	display: flex;
-	color: var(--gray);
+	color: var(--n_gray);
 	font-size: 18px;
 	line-height: 1.75;
 	/* hyphens: auto; */

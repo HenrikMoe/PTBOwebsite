@@ -50,16 +50,20 @@ const Header = () => {
 						<div className={classes.Title}>About</div>
 						<p className={classes.Description}>About CryptoCount</p>
 					</NavLink>
-					<hr />
-						<NavLink
+					<hr className={classes.HR} />
+					<NavLink
 						className={classes.WindowLink}
 						to="/client"
 						onClick={handleHoverLeave}
 					>
-						<div className={classes.Title}>Integrate CryptoCount</div>
-						<p className={classes.Description}>Block Reward Tax Data For Your Hosted Stakers</p>
+						<div className={classes.Title}>
+							Integrate CryptoCount
+						</div>
+						<p className={classes.Description}>
+							Block Reward Tax Data For Your Hosted Stakers
+						</p>
 					</NavLink>
-					<hr />
+					<hr className={classes.HR} />
 					<NavLink
 						className={classes.WindowLink}
 						to="/api"
@@ -68,7 +72,7 @@ const Header = () => {
 						<div className={classes.Title}>API</div>
 						<p className={classes.Description}>API Documentation</p>
 					</NavLink>
-					<hr />
+					<hr className={classes.HR} />
 					<NavLink
 						className={classes.WindowLink}
 						to="/privacy"
@@ -77,16 +81,18 @@ const Header = () => {
 						<div className={classes.Title}>Privacy</div>
 						<p className={classes.Description}>Privacy Policy</p>
 					</NavLink>
-					<hr />
+					<hr className={classes.HR} />
 					<NavLink
 						className={classes.WindowLink}
 						to="/literature"
 						onClick={handleHoverLeave}
 					>
 						<div className={classes.Title}>Resourses</div>
-						<p className={classes.Description}>Academic Literature</p>
+						<p className={classes.Description}>
+							Academic Literature
+						</p>
 					</NavLink>
-					<hr />
+					<hr className={classes.HR} />
 				</div>
 			</div>
 		);
@@ -103,7 +109,7 @@ const Header = () => {
 						These are the best mediums to reach out to the PTBO
 						team.
 					</p>
-					<hr />
+					<hr className={classes.HR} />
 					<div className={classes.ContactRow}>
 						<div className={classes.ContactForm}>
 							<MailOutlineIcon className={classes.Icon} />
@@ -126,7 +132,7 @@ const Header = () => {
 							</a>
 						</div>
 					</div>
-					<hr />
+					<hr className={classes.HR} />
 				</div>
 			</div>
 		);

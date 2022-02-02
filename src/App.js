@@ -6,9 +6,9 @@ import CryptoCount from "./BlogPosts/CryptoCount";
 import API from "./API/API";
 import Literature from "./Literature/Literature";
 import Home from "./Home/Home";
-import Client from "./Client/Client"
-import Privacy from "./Privacy/Privacy"
-import About from "./About/About"
+import Client from "./Client/Client";
+import Privacy from "./Privacy/Privacy";
+import About from "./About/About";
 
 const App = () => {
 	return (
@@ -24,22 +24,14 @@ const App = () => {
 							component={CryptoCount}
 						/>
 						<Route path="/about" exact component={About} />
-						<Route path="/api" exact component={API} />
+						<Route path="/api" component={API} />
 						<Route
 							path="/literature"
 							exact
 							component={Literature}
 						/>
-						<Route
-							path="/Client"
-							exact
-							component={Client}
-						/>
-							<Route
-							path="/Privacy"
-							exact
-							component={Privacy}
-						/>
+						<Route path="/Client" exact component={Client} />
+						<Route path="/Privacy" exact component={Privacy} />
 					</Switch>
 				</div>
 				<Footer className={classes.footer} />

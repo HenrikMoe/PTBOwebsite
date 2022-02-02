@@ -9,7 +9,7 @@
 
 .AboutHR {
 	margin-top: 50px;
-	color: var(--gray);
+	color: var(--n_gray);
 	width: 100%;
 }
 
@@ -21,7 +21,7 @@ h1 {
 	width: 40%;
 	max-width: 800px;
 	min-width: 300px;
-	color: var(--gray);
+	color: var(--n_gray);
 }
 
 .GitLink {
@@ -46,9 +46,9 @@ h1 {
 	box-shadow: 0 4px 24px rgb(0 0 0 / 16%), 0 0 1px rgb(1 0 0 / 16%);
 }
 
-span {
+.CR {
 	font-size: 0.8em;
-	color: var(--gray);
+	color: var(--n_gray);
 	font-weight: 300;
 	letter-spacing: 0.8;
 }

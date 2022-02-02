@@ -10,7 +10,7 @@
 }
 
 .Link {
-	color: var(--gray);
+	color: var(--n_gray);
 	text-decoration: none;
 	font-weight: 400;
 }

@@ -1,5 +1,5 @@
 .Footer {
-	position: relative;
+	position: sticky;
 	bottom: -60px;
 	background: rgb(46, 31, 59);
 	height: 125px;
@@ -11,16 +11,16 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	color: rgb(245, 245, 245);
 }
 
 .CR {
 	margin: 25px;
-	color: rgb(196, 196, 196);
+	color: rgb(245, 245, 245);
 }
 
 .FooterCol {
 	font-size: 0.8em;
-	color: rgb(196, 196, 196);
 }
 
 .ContactForm {
@@ -35,7 +35,7 @@
 	font-size: 0.8;
 	text-decoration: none;
 	font-weight: 400;
-	color: rgb(196, 196, 196);
+	color: rgb(245, 245, 245);
 	margin: 5px 5px 5px 5px;
 }
 

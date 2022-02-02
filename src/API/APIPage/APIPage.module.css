@@ -1,0 +1,60 @@
+.code {
+	font-size: 14px;
+	color: rgb(171, 178, 191);
+	font-weight: 500;
+	background-color: rgb(40, 44, 52);
+	border-radius: 5px;
+	padding: 7px 7px 7px 7px;
+}
+
+.codeSyntax {
+	font-size: 14px;
+	font-weight: 500;
+	border-radius: 5px;
+	padding: 7px 7px 7px 7px;
+}
+
+.Main {
+	margin-left: 40px;
+	width: 100%;
+	height: 100%;
+}
+
+.URL {
+	display: flex;
+	flex-direction: row;
+}
+
+.POST {
+	background-color: rgb(124, 56, 170);
+	text-align: center;
+	color: rgb(223, 209, 255);
+	border-radius: 5px;
+	padding: 5px 10px 5px 10px;
+	margin-right: 4px;
+}
+
+.GET {
+	background-color: rgb(62, 202, 86);
+	text-align: center;
+	color: rgb(209, 255, 209);
+	border-radius: 5px;
+	padding: 5px 10px 5px 10px;
+	margin-right: 4px;
+}
+
+.Body {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	min-width: 100%;
+	height: 100%;
+}
+
+.Example {
+	margin-right: 50px;
+	width: 80%;
+	max-width: 40%;
+	height: 100%;
+}

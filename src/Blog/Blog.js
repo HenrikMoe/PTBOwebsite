@@ -23,7 +23,9 @@ const Blog = (props) => {
 				<hr className={classes.AboutHR} />
 			</div>
 			<div className={classes.Content}>{props.children}</div>
-			<span>© Portal To Blockchain Organization 2021</span>
+			<span className={classes.CR}>
+				© Portal To Blockchain Organization 2021
+			</span>
 		</div>
 	);
 };

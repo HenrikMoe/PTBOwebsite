@@ -1,15 +1,149 @@
 import React from "react";
+import { NavLink, Route, Switch, useRouteMatch } from "react-router-dom";
 import classes from "./API.module.css";
+import APIPage from "./APIPage/APIPage";
+import APISection from "./APISection";
 
 const API = () => {
+	// API Navbar router
+	const { path, url } = useRouteMatch();
+
 	return (
 		<div className={classes.APIWrapper}>
 			<div className={classes.API}>
 				<h1 className={classes.Header}>
-					CryptoCount Developer API
+					<NavLink to="/api">CryptoCount Developer API</NavLink>
 					<hr className={classes.HR} />
 				</h1>
-				<h2 className={classes.EP}> 1) Tezos Delegator Reward Realization </h2>
+			</div>
+			<div className={classes.Body}>
+				<nav className={classes.SideNav}>
+					<ul>
+						<ul>
+							<APISection title="Tezos">
+								<div>
+									<li className={classes.Outter}>
+										Endpoints
+									</li>
+									<ul className={classes.NestedNav}>
+										<li className={classes.InnerNav}>
+											<NavLink
+												to={`${url}/reward-realization`}
+												className={classes.Nav}
+											>
+												Reward Realization
+											</NavLink>
+										</li>
+										<li className={classes.InnerNav}>
+											<NavLink
+												to={`${url}/reward-book-value`}
+												className={classes.Nav}
+											>
+												Reward Book Value
+											</NavLink>
+										</li>
+									</ul>
+								</div>
+							</APISection>
+							<APISection title="Cardano">
+								<div>
+									<li className={classes.Outter}>
+										Endpoints
+									</li>
+									<ul className={classes.NestedNav}>
+										<li className={classes.InnerNav}>
+											<NavLink
+												to={`${url}/reward-realization`}
+												className={classes.Nav}
+											>
+												Reward Realization
+											</NavLink>
+										</li>
+										<li className={classes.InnerNav}>
+											<NavLink
+												to={`${url}/reward-book-value`}
+												className={classes.Nav}
+											>
+												Reward Book Value
+											</NavLink>
+										</li>
+									</ul>
+								</div>
+							</APISection>
+						</ul>
+					</ul>
+				</nav>
+				<Switch>
+					<Route
+						exact
+						path={path}
+						component={() => <div>test</div>}
+					/>
+					<Route
+						exact
+						path="/api/reward-realization"
+						component={() => (
+							<APIPage
+								url="http://api.portaltoblockchain.org/Analysis/Tezos/AutoRealize"
+								params={
+									"?address=${address}&fiat=${fiat}&realizingQuantity=${realizingQuantity}"
+								}
+								type="get"
+								exampleReq="https://api.portaltoblockchain.org/Analysis/Tezos/AutoRealize?address=tz1TzS7MEQoCT6rdc8EQMXiCGVeWb4SLjnsH&fiat=USD&realizingQuantity=1000"
+								exampleRes={{
+									realizingRewards: [
+										{
+											date: "2021-11-13",
+											rewBasisMVDepletion: 2.5950637341688303,
+										},
+									],
+									unrealizedBasisRewardsMVDep: [
+										{
+											date: "2021-11-13",
+											rewBasisMVDepletion: 7.108628045640343,
+										},
+									],
+
+									unrealizedRewardAgg: 69.85857200000001,
+									unrealizedBasisAgg: 264.95026061047764,
+									unrealizedDepAgg: 254.46376411571248,
+									unrealizedMVDAgg: 254.44345054142477,
+									realizingRewardAgg: 99.99999999999996,
+									realizingRewardBasisAgg: 379.2666426254425,
+									realizingRewardDepAgg: 387.8184137664671,
+									realizingRewardMVDAgg: 387.3205327040061,
+									realizingXTZbasis: 0.6842319999999766,
+									realizingBasisP: null,
+									realizingBasisDep: null,
+									realizingBasisMVDep: null,
+									unrealizedXTZBasis: null,
+									unrealizedBasisP: null,
+									unrealizedBasisDep: null,
+									unrealizedBasisMVDep: null,
+									address:
+										"tz1TzS7MEQoCT6rdc8EQMXiCGVeWb4SLjnsH",
+									basisPrice: 3.792666426254427,
+									fiat: "USD",
+								}}
+							/>
+						)}
+					/>
+					<Route
+						exact
+						path="/api/reward-book-value"
+						component={() => (
+							<APIPage
+								url="api.portaltoblockchain.org/Analysis/Tezos/Auto"
+								params={"?address=${address}&fiat=${fiat}"}
+								type="post"
+								exampleReq="https://api.portaltoblockchain.org/Analysis/Tezos/AutoRealize?address=tz1TzS7MEQoCT6rdc8EQMXiCGVeWb4SLjnsH&fiat=USD&realizingQuantity=1000"
+								exampleRes='{hello: "this is an example "}'
+							/>
+						)}
+					/>
+				</Switch>
+			</div>
+			{/* <h2 className={classes.EP}> 1) Tezos Delegator Reward Realization </h2>
 				<h3 className={classes.EndPoint}>Base URL</h3>
 				<code className={classes.code}>
 					api.portaltoblockchain.org/Analysis/Tezos/AutoRealize
@@ -271,9 +405,7 @@ const API = () => {
 				The staking basis by the basis cost and by the market value
 				dilution cost.
 				<br />
-				<br />
-				
-			</div>
+				<br /> */}
 		</div>
 	);
 };
