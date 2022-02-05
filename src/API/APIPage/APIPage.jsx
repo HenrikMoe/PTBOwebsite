@@ -9,8 +9,7 @@ const APIPage = ({ url, params, type, exampleReq, exampleRes }) => {
 				<div>
 					<h3 className={classes.Description}>Description</h3>
 					<p>
-						Some text should go here to describe the endpoint and
-						its function.
+						Pass Tezos delegator address, fiat currency, and a quantity to realize. Returns the realizingRewardBasisAgg which is the sum of all the rewards being realized in units of fiat currency. 
 					</p>
 					<h3 className={classes.Description}>Endpoint</h3>
 					<code className={classes.code}>

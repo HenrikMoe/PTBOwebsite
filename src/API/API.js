@@ -23,7 +23,6 @@ const API = () => {
 							<APISection title="Tezos">
 								<div>
 									<li className={classes.Outter}>
-										Endpoints
 									</li>
 									<ul className={classes.NestedNav}>
 										<li className={classes.InnerNav}>
@@ -39,7 +38,7 @@ const API = () => {
 												to={`${url}/reward-book-value`}
 												className={classes.Nav}
 											>
-												Reward Book Value
+												Reward and Basis Book Value
 											</NavLink>
 										</li>
 									</ul>
@@ -48,7 +47,6 @@ const API = () => {
 							<APISection title="Cardano">
 								<div>
 									<li className={classes.Outter}>
-										Endpoints
 									</li>
 									<ul className={classes.NestedNav}>
 										<li className={classes.InnerNav}>
@@ -64,7 +62,7 @@ const API = () => {
 												to={`${url}/reward-book-value`}
 												className={classes.Nav}
 											>
-												Reward Book Value
+												Reward and Basis Book Value
 											</NavLink>
 										</li>
 									</ul>
