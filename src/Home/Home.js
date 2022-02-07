@@ -18,7 +18,7 @@ const Home = () => {
 				<div className={classes.Text}>
 					<h3 className={classes.Welcome}>Welcome to</h3>
 					<h2 className={classes.Co}>
-						The Portal To Blockchain Organization (PTBO)
+						Portal To Blockchain Organization (PTBO)
 					</h2>
 					<h4>
 					{/* <text className={classes.Sub}> */}

@@ -150,7 +150,7 @@ const Header = () => {
 				>
 					<img src={img} alt="logo" />
 					<span className={classes.Name}>
-						The Portal To Blockchain
+						Portal To Blockchain
 					</span>
 				</NavLink>
 				<div className={classes.NavGroup}>
