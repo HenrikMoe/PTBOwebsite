@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Client.module.css";
-import video from '../Videos/ClientModuleDemo.mp4'
+//import video from '../Videos/ClientModuleDemo.mp4'
 
 
 const Client = () => {
@@ -33,8 +33,8 @@ const Client = () => {
 				<br />
 				<h3 className={classes.EndPoint}>Example Machine Demo.</h3>
 
-				<video width="750" height="500" src={video} controls >
-				</video>
+				{/* <video width="750" height="500" src={video} controls >
+				</video> */}
 				<br />
 				<br />
 				
