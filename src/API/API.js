@@ -44,7 +44,7 @@ const API = () => {
 									</ul>
 								</div>
 							</APISection>
-							<APISection title="Cardano">
+							<APISection title="Velas">
 								<div>
 									<li className={classes.Outter}>
 									</li>
@@ -54,7 +54,7 @@ const API = () => {
 												to={`${url}/reward-realization`}
 												className={classes.Nav}
 											>
-												Reward Realization
+												Velas Reward Realization
 											</NavLink>
 										</li>
 										<li className={classes.InnerNav}>
@@ -62,7 +62,7 @@ const API = () => {
 												to={`${url}/reward-book-value`}
 												className={classes.Nav}
 											>
-												Reward and Basis Book Value
+												Velas Reward and Basis Book Value
 											</NavLink>
 										</li>
 									</ul>
