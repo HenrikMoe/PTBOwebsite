@@ -44,14 +44,7 @@ const About = () => {
                 <br />
 				<br />
 				Visit our <a href="https://www.github.com/PortalToBlockchainOrganization">GitHub</a> and feel free to leave feature requests. 
-				<br />
-				<br />
-				Here is a representation of the History object, the core object to CryptoCount's functionality. 
-				<br />
-				<br />
-				<img src={HistoryObject} className={classes.Pic} alt="History Object"/>
-				<br />
-				<br />
+		
 
 			</div>
 		</div>
