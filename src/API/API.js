@@ -26,25 +26,26 @@ const API = () => {
 									</li>
 									<ul className={classes.NestedNav}>
 										<li className={classes.InnerNav}>
-											<NavLink
-												to={`${url}/reward-realization`}
-												className={classes.Nav}
-											>
-												Reward Realization
-											</NavLink>
-										</li>
-										<li className={classes.InnerNav}>
-											<NavLink
+										<NavLink
 												to={`${url}/reward-book-value`}
 												className={classes.Nav}
 											>
-												Reward and Basis Book Value
+												<b>Modern Holding </b> - Unrealized FMV reward position.
+											</NavLink>
+											
+										</li>
+										<li className={classes.InnerNav}>
+										<NavLink
+												to={`${url}/reward-realization`}
+												className={classes.Nav}
+											>
+												<b>Realization </b> - FIFO FMV of Rewards
 											</NavLink>
 										</li>
 									</ul>
 								</div>
 							</APISection>
-							<APISection title="Velas">
+							{/* <APISection title="Velas">
 								<div>
 									<li className={classes.Outter}>
 									</li>
@@ -67,7 +68,7 @@ const API = () => {
 										</li>
 									</ul>
 								</div>
-							</APISection>
+							</APISection> */}
 						</ul>
 					</ul>
 				</nav>
@@ -87,41 +88,47 @@ const API = () => {
 									"?address=${address}&fiat=${fiat}&realizingQuantity=${realizingQuantity}"
 								}
 								type="get"
-								exampleReq="https://api.portaltoblockchain.org/Analysis/Tezos/AutoRealize?address=tz1TzS7MEQoCT6rdc8EQMXiCGVeWb4SLjnsH&fiat=USD&realizingQuantity=1000"
+								exampleReq="http://api.portaltoblockchain.org/Analysis/Tezos/AutoRealize?address=tz1TzS7MEQoCT6rdc8EQMXiCGVeWb4SLjnsH&fiat=USD&realizingQuantity=100"
 								exampleRes={{
+									address:
+										"tz1TzS7MEQoCT6rdc8EQMXiCGVeWb4SLjnsH",
+									basisPrice: 3.792666426254427,
+									fiat: "USD",
 									realizingRewards: [
 										{
 											date: "2021-11-13",
-											rewBasisMVDepletion: 2.5950637341688303,
+											reward: 2.5950637341688303,
 										},
 									],
-									unrealizedBasisRewardsMVDep: [
+									unrealizedRewards: [
 										{
-											date: "2021-11-13",
-											rewBasisMVDepletion: 7.108628045640343,
-										},
+											date: "2021-11-17",
+											reward: 2.5193753
+										}
 									],
-
+									unrealizedFMVRewards: [],
+									realizingFMVRewards: [],
+									unrealizedFMVRewardsMVDep: [],
+									realizingFMVRewardsMVDep: [],
+									unrealizedFMVRewardsSupDep: [],
+									realizingFMVRewardsSupDep: [],
 									unrealizedRewardAgg: 69.85857200000001,
-									unrealizedBasisAgg: 264.95026061047764,
+									unrealizedFMVAgg: 264.95026061047764,
 									unrealizedDepAgg: 254.46376411571248,
 									unrealizedMVDAgg: 254.44345054142477,
 									realizingRewardAgg: 99.99999999999996,
-									realizingRewardBasisAgg: 379.2666426254425,
+									realizingRewardFMVAgg: 11379.2666426254425,
 									realizingRewardDepAgg: 387.8184137664671,
 									realizingRewardMVDAgg: 387.3205327040061,
 									realizingXTZbasis: 0.6842319999999766,
 									realizingBasisP: null,
 									realizingBasisDep: null,
 									realizingBasisMVDep: null,
-									unrealizedXTZBasis: null,
-									unrealizedBasisP: null,
-									unrealizedBasisDep: null,
-									unrealizedBasisMVDep: null,
-									address:
-										"tz1TzS7MEQoCT6rdc8EQMXiCGVeWb4SLjnsH",
-									basisPrice: 3.792666426254427,
-									fiat: "USD",
+									unrealizedXTZBasis: 138901,
+									unrealizedBasisP: 138901,
+									unrealizedBasisDep: 138901,
+									unrealizedBasisMVDep: 138901,
+								
 								}}
 							/>
 						)}
@@ -131,11 +138,31 @@ const API = () => {
 						path="/api/reward-book-value"
 						component={() => (
 							<APIPage
-								url="api.portaltoblockchain.org/Analysis/Tezos/Auto"
+								url="http://api.portaltoblockchain.org/Analysis/Tezos/Auto"
 								params={"?address=${address}&fiat=${fiat}"}
-								type="post"
+								type="get"
 								exampleReq="https://api.portaltoblockchain.org/Analysis/Tezos/AutoRealize?address=tz1TzS7MEQoCT6rdc8EQMXiCGVeWb4SLjnsH&fiat=USD&realizingQuantity=1000"
-								exampleRes='{hello: "this is an example "}'
+								exampleRes={{	address:
+									"tz1TzS7MEQoCT6rdc8EQMXiCGVeWb4SLjnsH",
+								basisPrice: 3.792666426254427,
+								fiat: "USD",
+								unrealizedRewards: [
+									{
+										date: "2021-11-17",
+										reward: 2.5193753
+									}
+								],
+								unrealizedFMVRewards: [],
+								unrealizedFMVRewardsMVDep: [],
+								unrealizedFMVRewardsSupDep: [],
+								unrealizedRewardAgg: 69.85857200000001,
+								unrealizedFMVAgg: 264.95026061047764,
+								unrealizedDepAgg: 254.46376411571248,
+								unrealizedMVDAgg: 254.44345054142477,
+								unrealizedXTZBasis: 138901,
+								unrealizedBasisP: 138901,
+								unrealizedBasisDep: 138901,
+								unrealizedBasisMVDep: 138901,}}
 							/>
 						)}
 					/>
