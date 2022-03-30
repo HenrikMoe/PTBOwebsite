@@ -141,7 +141,7 @@ const API = () => {
 								url="http://api.portaltoblockchain.org/Analysis/Tezos/Auto"
 								params={"?address=${address}&fiat=${fiat}"}
 								type="get"
-								exampleReq="https://api.portaltoblockchain.org/Analysis/Tezos/AutoRealize?address=tz1TzS7MEQoCT6rdc8EQMXiCGVeWb4SLjnsH&fiat=USD&realizingQuantity=1000"
+								exampleReq="http://api.portaltoblockchain.org/Analysis/Tezos/AutoRealize?address=tz1TzS7MEQoCT6rdc8EQMXiCGVeWb4SLjnsH&fiat=USD&realizingQuantity=1000"
 								exampleRes={{	address:
 									"tz1TzS7MEQoCT6rdc8EQMXiCGVeWb4SLjnsH",
 								basisPrice: 3.792666426254427,
