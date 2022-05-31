@@ -61,6 +61,8 @@
 .EndPoint {
 	color: var(--dark-gray);
 	margin-bottom: 8px;
+	width: 100%;
+	display: flex;
 }
 
 .Body {
@@ -105,6 +107,9 @@
 .Description {
 	font-weight: 700;
 	color: var(--dark-gray);
+	display: flex;
+	width: 400px;
+
 }
 
 .InnerNav {
@@ -131,4 +136,8 @@
 	margin-left: 5px;
 	width: 18px;
 	transition: all 200ms ease-in-out;
+}
+
+.Example{
+	width: 100%
 }

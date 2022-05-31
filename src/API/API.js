@@ -30,7 +30,7 @@ const API = () => {
 												to={`${url}/reward-book-value`}
 												className={classes.Nav}
 											>
-												<b>Modern Holding </b> - Unrealized FMV reward position.
+												<b> Unrealized FMV Reward Position </b> 
 											</NavLink>
 											
 										</li>
@@ -39,7 +39,7 @@ const API = () => {
 												to={`${url}/reward-realization`}
 												className={classes.Nav}
 											>
-												<b>Realization </b> - FIFO FMV of Rewards
+												<b>Realization of FMV Rewards - FIFO</b> 
 											</NavLink>
 										</li>
 									</ul>
@@ -85,25 +85,26 @@ const API = () => {
 							<APIPage
 								url="http://api.portaltoblockchain.org/Analysis/Tezos/AutoRealize"
 								params={
-									"?address=${address}&fiat=${fiat}&realizingQuantity=${realizingQuantity}"
+									"?address=${address}&fiat=${fiat}&realizingQuantity=${realizingQuantity}&consensusRole=${consensusRole}"
 								}
 								type="get"
-								exampleReq="http://api.portaltoblockchain.org/Analysis/Tezos/AutoRealize?address=tz1TzS7MEQoCT6rdc8EQMXiCGVeWb4SLjnsH&fiat=USD&realizingQuantity=100"
+								baseUrl
+								exampleReq="http://api.portaltoblockchain.org/Analysis/Tezos/AutoRealize?address=tz1TzS7MEQoCT6rdc8EQMXiCGVeWb4SLjnsH&fiat=USD&realizingQuantity=100&consensusRole=Delegator"
 								exampleRes={{
 									address:
-										"tz1TzS7MEQoCT6rdc8EQMXiCGVeWb4SLjnsH",
-									basisPrice: 3.792666426254427,
+										"tz1TzS7...nsH",
+									basisPrice: 3.79,
 									fiat: "USD",
 									realizingRewards: [
 										{
 											date: "2021-11-13",
-											reward: 2.5950637341688303,
+											reward: 2.58,
 										},
 									],
 									unrealizedRewards: [
 										{
 											date: "2021-11-17",
-											reward: 2.5193753
+											reward: 2.53
 										}
 									],
 									unrealizedFMVRewards: [],
@@ -112,15 +113,15 @@ const API = () => {
 									realizingFMVRewardsMVDep: [],
 									unrealizedFMVRewardsSupDep: [],
 									realizingFMVRewardsSupDep: [],
-									unrealizedRewardAgg: 69.85857200000001,
-									unrealizedFMVAgg: 264.95026061047764,
-									unrealizedDepAgg: 254.46376411571248,
-									unrealizedMVDAgg: 254.44345054142477,
-									realizingRewardAgg: 99.99999999999996,
-									realizingRewardFMVAgg: 11379.2666426254425,
-									realizingRewardDepAgg: 387.8184137664671,
-									realizingRewardMVDAgg: 387.3205327040061,
-									realizingXTZbasis: 0.6842319999999766,
+									unrealizedRewardAgg: 69.81,
+									unrealizedFMVAgg: 264.42,
+									unrealizedDepAgg: 254.12,
+									unrealizedMVDAgg: 254.33,
+									realizingRewardAgg: 99.55,
+									realizingRewardFMVAgg: 11379.41,
+									realizingRewardDepAgg: 387.67,
+									realizingRewardMVDAgg: 387.55,
+									realizingXTZbasis: 0.34,
 									realizingBasisP: null,
 									realizingBasisDep: null,
 									realizingBasisMVDep: null,
@@ -139,9 +140,9 @@ const API = () => {
 						component={() => (
 							<APIPage
 								url="http://api.portaltoblockchain.org/Analysis/Tezos/Auto"
-								params={"?address=${address}&fiat=${fiat}"}
+								params={"?address=${address}&fiat=${fiat}&consensusRole=${consensusRole}"}
 								type="get"
-								exampleReq="http://api.portaltoblockchain.org/Analysis/Tezos/Auto?address=tz1TzS7MEQoCT6rdc8EQMXiCGVeWb4SLjnsH&fiat=USD"
+								exampleReq="http://api.portaltoblockchain.org/Analysis/Tezos/Auto?address=tz1TzS7MEQoCT6rdc8EQMXiCGVeWb4SLjnsH&fiat=USD&consensusRole=Delegator"
 								exampleRes={{	address:
 									"tz1TzS7MEQoCT6rdc8EQMXiCGVeWb4SLjnsH",
 								basisPrice: 3.792666426254427,
