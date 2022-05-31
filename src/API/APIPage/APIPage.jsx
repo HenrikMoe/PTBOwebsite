@@ -46,7 +46,7 @@ const APIPage = ({ url, params, type, exampleReq, exampleRes }) => {
 						* consensusRole="Delegator" or "Baker"
 						<br>
 						</br> 
-						* realizingQuantity=520
+						* realizingQuantity= Constant below or equal to unrealizedRewardAgg
 						<br></br>
 						<br></br>
 
