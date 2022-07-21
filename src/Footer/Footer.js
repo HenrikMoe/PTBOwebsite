@@ -23,7 +23,7 @@ const Footer = () => {
 				<div className={classes.ContactForm}>
 					<GitHubIcon className={classes.Icon} />
 					<a
-						href="https://github.com/HenrikMoe?tab=repositories"
+						href="https://github.com/PortalToBlockchainOrganization"
 						target="_blank"
 						rel="noreferrer"
 						className={classes.ContactLink}
