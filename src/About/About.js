@@ -25,13 +25,10 @@ const About = () => {
 		CryptoCount 0.2.1 supplies tax optimized financial data to Tezos block reward delegators and bakers.				
                 <br />
 				<br />
-		Users can visualize rewards and generates income statements.
-		<br />
-				<br />
-                Users can plan realizations from Tezos based assets into fiat currency. 
+		Users can visualize rewards, generates income statements, and plan realizations from Tezos based assets into fiat currency. 
                 <br />
 				<br />
-				The goal is to help people manage their decentralized finance activity and respondibly plan realizations.
+				The goal is to help manage personal decentralized finance activity and respondibly plan realizations.
                 <br />
 				<br />
 				CryptoCount supports 40 countries and 1 blockchain. 
