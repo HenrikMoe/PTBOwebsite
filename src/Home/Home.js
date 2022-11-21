@@ -18,11 +18,11 @@ const Home = () => {
 				<div className={classes.Text}>
 					<h3 className={classes.Welcome}>Welcome to</h3>
 					<h2 className={classes.Co}>
-						Portal To Blockchain Organization (PTBO)
+						Portal To Blockchain Organization Technologies
 					</h2>
 					<h4>
 					{/* <text className={classes.Sub}> */}
-					Learn about <a href="https://www.portaltoblockchain.org/about"> CryptoCount</a>. 
+					Hosting Tezos addresses on your platform? <a href="https://www.portaltoblockchain.org/client"> CryptoCount Supplies Block Reward FMV Income Statements For Your Users</a>. 
 										{/* </text> */}
 					</h4>
 					

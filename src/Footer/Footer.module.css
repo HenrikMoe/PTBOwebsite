@@ -1,10 +1,11 @@
 .Footer {
-	position: sticky;
-	bottom: -60px;
+	position: absolute;
+	bottom: -80px;
 	background: rgb(46, 31, 59);
-	height: 125px;
+	height: 165px;
 	width: 100vw;
 	color: white;
+	/* margin-top: 50px; */
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
 	display: flex;

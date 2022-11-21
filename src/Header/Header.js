@@ -21,6 +21,12 @@ const Header = () => {
 		setDropdown(null);
 	};
 
+	
+	const newTab = () => {
+		window.open(
+		"https://app.swaggerhub.com/apis-docs/PORTALTOBLOCKCHAIN_1/crypto-count_api/0.2.2#/", "_blank");
+	}
+
 	let menu;
 
 	if (dropdown === "cryptocount") {
@@ -60,28 +66,28 @@ const Header = () => {
 							Integrate CryptoCount
 						</div>
 						<p className={classes.Description}>
-							Block Reward Tax Data For Your Hosted Stakers
+							Deliver Block Reward Tax Data For Hosted Tezos Addresses
 						</p>
 					</NavLink>
 					<hr className={classes.HR} />
 					<NavLink
 						className={classes.WindowLink}
-						to="/api"
-						onClick={handleHoverLeave}
+						onClick={newTab}
+						to="/"
 					>
 						<div className={classes.Title}>API</div>
-						<p className={classes.Description}>API Documentation</p>
+						<p className={classes.Description}>Endpoint and Accounting Object Properties Documentation</p>
 					</NavLink>
 					<hr className={classes.HR} />
-					<NavLink
+					{/* <NavLink
 						className={classes.WindowLink}
 						to="/privacy"
 						onClick={handleHoverLeave}
 					>
 						<div className={classes.Title}>Privacy</div>
 						<p className={classes.Description}>Privacy Policy</p>
-					</NavLink>
-					<hr className={classes.HR} />
+					</NavLink> */}
+					{/* <hr className={classes.HR} /> */}
 					<NavLink
 						className={classes.WindowLink}
 						to="/literature"
@@ -89,7 +95,7 @@ const Header = () => {
 					>
 						<div className={classes.Title}>Resourses</div>
 						<p className={classes.Description}>
-							Academic Literature
+							CryptoCount is Derived from Academic Literature
 						</p>
 					</NavLink>
 					<hr className={classes.HR} />
@@ -150,7 +156,7 @@ const Header = () => {
 				>
 					<img src={img} alt="logo" />
 					<span className={classes.Name}>
-						Portal To Blockchain
+						PTBO TECH
 					</span>
 				</NavLink>
 				<div className={classes.NavGroup}>
@@ -160,13 +166,13 @@ const Header = () => {
 					>
 						CryptoCount
 					</div>
-					<div
+					{/* <div
 						className={classes.Link}
 						to="/resources"
 						onMouseEnter={handleContactEnter}
 					>
 						Contact
-					</div>
+					</div> */}
 				</div>
 			</header>
 			{menu}

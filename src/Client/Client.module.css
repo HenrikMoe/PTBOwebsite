@@ -1,12 +1,25 @@
 .APIWrapper {
-	display: flex;
-	justify-content: center;
-	margin-top: 100px;
-	color: var(--n_gray);
+	margin-top: 60px;
+	overflow-y: scroll !important;
+	margin-left: 60px;
+	width: auto;
+	white-space:nowrap;
+	height: 3000px !important;
 }
+
+.wrap{
+	overflow-y: scroll !important;
+	height: 3000px !important;
+	box-sizing: padding-box;
+    -moz-box-sizing: padding-box;
+    -webkit-box-sizing: padding-box;
+    padding-bottom: 100px;
+}
+
 
 .API {
 	width: 80%;
+	overflow-y: scroll !important;
 }
 
 .code {
@@ -25,6 +38,7 @@
 	border: none;
 	width: 15%;
 	margin: 10px 0 0;
+
 }
 
 .Header {
@@ -32,10 +46,12 @@
 	display: flex;
 	flex-direction: column;
 	align-items: left;
+	margin-top: 50px
 }
 
 .EP {
 	color: var(--dark-gray);
+	font-size: .85em;
 }
 
 .Name {
