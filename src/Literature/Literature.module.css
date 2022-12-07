@@ -18,3 +18,8 @@
 .Link:hover {
 	color: var(--n_purple);
 }
+
+.words{
+	font-size: 1.5em;
+	color: black;
+}

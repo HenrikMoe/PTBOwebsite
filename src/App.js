@@ -10,14 +10,14 @@ import Client from "./Client/Client";
 import Privacy from "./Privacy/Privacy";
 import About from "./About/About";
 
-const App = () => {
+const App = (props) => {
 	return (
 		<div>
 			<BrowserRouter>
 				<div className={classes.App}>
 					<Header />
 					<Switch>
-						<Route path="/" exact component={Home} />
+						<Route path="/" exact component={Home} /> 
 						<Route
 							path="/blogs/cryptocount"
 							exact

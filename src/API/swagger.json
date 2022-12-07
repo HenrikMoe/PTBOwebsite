@@ -1,0 +1,349 @@
+{
+  "swagger": "2.0",
+  "info": {
+      "title": "CryptoCount API",
+      "description": "Move your app forward with the CryptoCount API.",
+      "version": "0.2.2"
+  },
+  "host": "localhost:7000",
+  "schemes": [
+      "http"
+  ],
+  "basePath": "/v1",
+  "produces": [
+      "application/json"
+  ],
+  "paths": {
+      "/tezos/generate": {
+          "post": {
+              "summary": "Generate Set",
+              "description": "Generate a CryptoCount set object. The response contains unrealized data relative to the passed fiat currency. \n",
+              "parameters": [
+                  {
+                      "name": "wallet address",
+                      "in": "query",
+                      "description": "Tezos delegator or baker address.",
+                      "required": true,
+                      "type": "string",
+                      "format": "string"
+                  },
+                  {
+                      "name": "fiat",
+                      "in": "query",
+                      "description": "Fiat currency 3 letter code. (Ex. USD).",
+                      "required": true,
+                      "type": "string",
+                      "format": "string"
+                  },
+                  {
+                      "name": "consensus Role",
+                      "in": "query",
+                      "description": "Specify Delegator or Baker PoS role.",
+                      "required": true,
+                      "type": "string",
+                      "format": "string"
+                  }
+              ],
+              "tags": [
+                  "Product"
+              ],
+              "responses": {
+                  "200": {
+                      "description": "Unrealized accounting object",
+                      "schema": {
+                          "$ref": "#/definitions/Accounting Object"
+                      }
+                  },
+                  "default": {
+                      "description": "Unexpected error",
+                      "schema": {
+                          "$ref": "#/definitions/Error"
+                      }
+                  }
+              }
+          }
+      },
+      "/tezos/realize": {
+          "post": {
+              "summary": "Realize Native Rewards FIFO",
+              "description": "Realize a quantity of native rewards by the first in first out accounting method.",
+              "parameters": [
+                  {
+                      "name": "setId",
+                      "in": "query",
+                      "description": "The set ID of the accounting set.",
+                      "required": true,
+                      "type": "string",
+                      "format": "string"
+                  },
+                  {
+                      "name": "quantity",
+                      "in": "query",
+                      "description": "The quantity of native XTZ to realize from the set.",
+                      "required": true,
+                      "type": "number",
+                      "format": "double"
+                  }
+              ],
+              "tags": [
+                  "Products"
+              ],
+              "responses": {
+                  "200": {
+                      "description": "An array of price estimates by product",
+                      "schema": {
+                          "$ref": "#/definitions/Accounting Object"
+                      }
+                  },
+                  "default": {
+                      "description": "Unexpected error",
+                      "schema": {
+                          "$ref": "#/definitions/Error"
+                      }
+                  }
+              }
+          }
+      },
+      "/tezos/retrieve": {
+          "post": {
+              "summary": "Retrieve accounting object by set ID.",
+              "description": "Retrieves and updates accoutning set with new unrealized native rewards, updated basis cost data and net transactions.",
+              "parameters": [
+                  {
+                      "name": "setId",
+                      "in": "query",
+                      "description": "Set id of CryptoCount object.",
+                      "required": true,
+                      "type": "string",
+                      "format": "string"
+                  }
+              ],
+              "tags": [
+                  "Products"
+              ],
+              "responses": {
+                  "200": {
+                      "description": "An array of products",
+                      "schema": {
+                          "$ref": "#/definitions/Accounting Object"
+                      }
+                  },
+                  "default": {
+                      "description": "Unexpected error",
+                      "schema": {
+                          "$ref": "#/definitions/Error"
+                      }
+                  }
+              }
+          }
+      },
+      "/tezos/save": {
+          "post": {
+              "summary": "Save accounting set with a realization.",
+              "description": "Save accounting set with a realized quantity.",
+              "parameters": [
+                  {
+                      "name": "setId",
+                      "in": "query",
+                      "description": "The set ID of the accounting set.",
+                      "required": true,
+                      "type": "string",
+                      "format": "string"
+                  },
+                  {
+                      "name": "quantity",
+                      "in": "query",
+                      "description": "The quantity of native XTZ to realize from the set.",
+                      "required": true,
+                      "type": "number",
+                      "format": "double"
+                  }
+              ],
+              "tags": [
+                  "Products"
+              ],
+              "responses": {
+                  "200": {
+                      "description": "Saved accounting set",
+                      "schema": {
+                          "$ref": "#/definitions/Accounting Object"
+                      }
+                  },
+                  "default": {
+                      "description": "Unexpected error",
+                      "schema": {
+                          "$ref": "#/definitions/Error"
+                      }
+                  }
+              }
+          }
+      },
+      "/history": {
+          "post": {
+              "summary": "Get User Sets.",
+              "description": "Get all user accounting sets for a user Id.",
+              "parameters": [
+                  {
+                      "name": "User Id",
+                      "required": true,
+                      "in": "query",
+                      "type": "string",
+                      "format": "string",
+                      "description": "User id to retrieve sets associated with."
+                  }
+              ],
+              "tags": [
+                  "User"
+              ],
+              "responses": {
+                  "200": {
+                      "description": "Array of N accounting objects.",
+                      "schema": {
+                          "$ref": "#/definitions/Accounting Object"
+                      }
+                  },
+                  "default": {
+                      "description": "Unexpected error",
+                      "schema": {
+                          "$ref": "#/definitions/Error"
+                      }
+                  }
+              }
+          }
+      }
+  },
+  "definitions": {
+      "Accounting Object": {
+          "type": "object",
+          "properties": {
+              "object_id": {
+                  "type": "string",
+                  "description": "Unique identifier of the accounting set."
+              },
+              "walletAddress": {
+                  "type": "string",
+                  "description": "Address of Delegator or Baker."
+              },
+              "fiat": {
+                  "type": "string",
+                  "description": "3 letter fiat country code."
+              },
+              "consensusRole": {
+                  "type": "string",
+                  "description": "Delegator or Baker Tezos Proof of Stake consensus role."
+              },
+              "firstRewardDate": {
+                  "type": "string",
+                  "description": "First date of a reward."
+              },
+              "pricesAndMarketCapsByDay": {
+                  "type": "string",
+                  "description": "Array of prices and market caps by domain starting from first native reward date."
+              },
+              "rewardsByDay": {
+                  "type": "string",
+                  "description": "Native Tezos consensus rewards by day."
+              },
+              "balancesByDay": {
+                  "type": "string",
+                  "description": "Address account balance by day."
+              },
+              "unaccountedNetTransactions": {
+                  "type": "string",
+                  "description": "Array of net daily transactions."
+              },
+              "bakerCycles": {
+                  "type": "string",
+                  "description": "Baker address and the cycle domain that it baked for the passed delegator."
+              },
+              "marketByDay": {
+                  "type": "string",
+                  "description": "Market capital by day of native reward receipt period."
+              },
+              "priceByDay": {
+                  "type": "string",
+                  "description": "Price by day of native reward receipt period."
+              },
+              "cyclesByDay": {
+                  "type": "string",
+                  "description": "Cycles by day of native reward receipt period."
+              },
+              "nativeMarketDilutionRewards": {
+                  "type": "string",
+                  "description": "Native consensus rewards fair market value plus market value dilution."
+              },
+              "supplyByDay": {
+                  "type": "string",
+                  "description": "Supply of Tez by day."
+              },
+              "rawWalletTransactions": {
+                  "type": "string",
+                  "description": "Array of raw wallet transactions."
+              },
+              "nativeSupplyDepletion": {
+                  "type": "string",
+                  "description": "Array of native supply depletion constants for each day of native reward receipt domain."
+              },
+              "rewardsByCycle": {
+                  "type": "string",
+                  "description": "Native rewards by cycle domain."
+              },
+              "cyclesMappedToDays": {
+                  "type": "string",
+                  "description": "Cycles with their corresponding date domain."
+              },
+              "bakerAddresses": {
+                  "type": "string",
+                  "description": "List of delegated baker addresses."
+              },
+              "nativeRewardsFMVByCycle": {
+                  "type": "string",
+                  "description": "Array of native rewards with fair market value assesments."
+              },
+              "nativeSupplyDepletionRewards": {
+                  "type": "string",
+                  "description": "Array of native rewards with fair market value plus Tez supply depletion constants."
+              },
+              "unrealizedNativeRewards": {
+                  "type": "string",
+                  "description": "Unrealized native rewards."
+              },
+              "unrealizedNativeFMVRewards": {
+                  "type": "string",
+                  "description": "Unrealized native fair market value rewards."
+              },
+              "unrealizedNativeMarketDilutionRewards": {
+                  "type": "string",
+                  "description": "Unrealized native FMV plus market dilution rewareds."
+              },
+              "unrealizedNativeSupplyDepletionRewards": {
+                  "type": "string",
+                  "description": "Unrealized native FMV plus supply depletion rewards."
+              },
+              "aggregateUnrealizedNativeReward100p": {
+                  "type": "string",
+                  "description": "Sum of unrealized native rewards."
+              },
+              "weightedAverageTotalDomainInvestmentCost": {
+                  "type": "string",
+                  "description": "Weighted average of basis invesments of Tez to generate native rewards."
+              }
+          }
+      },
+      "Error": {
+          "type": "object",
+          "properties": {
+              "code": {
+                  "type": "integer",
+                  "format": "int32"
+              },
+              "message": {
+                  "type": "string"
+              },
+              "fields": {
+                  "type": "string"
+              }
+          }
+      }
+  }
+}

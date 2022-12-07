@@ -93,9 +93,9 @@ const Header = () => {
 						to="/literature"
 						onClick={handleHoverLeave}
 					>
-						<div className={classes.Title}>Resourses</div>
+						<div className={classes.Title}>RoadMap</div>
 						<p className={classes.Description}>
-							CryptoCount is Derived from Academic Literature
+							CryptoCount RoadMap and Resources
 						</p>
 					</NavLink>
 					<hr className={classes.HR} />

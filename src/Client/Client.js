@@ -99,10 +99,13 @@ const Client = () => {
 					Integrate CryptoCount For Your App's Tezos Addresses
 					<hr className={classes.HR} />
 				</h1>
-				<h2 className={classes.EP}> Are you hosting Tezos delegators or bakers in an App? <a href="https://app.swaggerhub.com/apis-docs/PORTALTOBLOCKCHAIN_1/crypto-count_api/0.2.2#/">CryptoCount API</a> is for you.  </h2>
-				<h2 className={classes.EP}> Integrate CryptoCount to get Fair Market Value (FMV) assessments in 40 fiat currencies for your Tezos user’s block rewards. </h2>
-				<h2 className={classes.EP}> Display the user’s FMV income when they sell or transfer a quantity of Tez less than or equal to the sum of their block rewards.  </h2>
-				<h2 className={classes.EP}> For transfer or sale amounts equalling more than the total of the user's block rewards, capital gains + layer 2 DeFi/Dapp reward tax accounting is coming in CryptoCount 0.3.0.  </h2>
+				<h2 className={classes.EP}> Is your app hosting Tezos delegators? The <a href="https://app.swaggerhub.com/apis-docs/PORTALTOBLOCKCHAIN_1/crypto-count_api/0.2.2#/">CryptoCount API</a> generates an accounting object that tracks your hosted addresses' rewards' fiat value performance. </h2>
+				<h2 className={classes.EP}>Your app can /Generate a CryptoCount object then /Retreive it and post a /Realize with a quantity of Tez to collect fiat income metrics for your user.</h2>
+				<h2 className={classes.EP}> Integrate CryptoCount to get Fair Market Value (FMV) assessments and FMV plus depreciation assessments in 40 fiat currencies. </h2>
+				<h2 className={classes.EP}> Calling /Realize is ideal when the user sells, or sends, a quantity of Tez less than or equal to the sum of their block rewards.  </h2>
+				<h2 className={classes.EP}> The sum of an address's block rewards is available after a post on /Generate.</h2>
+				<h2 className={classes.EP}> If your app's hosted addresses do not directly particpate in on chain staking, contact PTBO TECH to make your staking system compatible with CryptoCount (for free).</h2>
+				<h2 className={classes.EP}> Capital gains transaction and layer 2 DeFi/Dapp reward FMV tax realizations are under development for CryptoCount 0.3.0.  </h2>
 				<br />
 				<br />
 				<h2 className={classes.Header}>Data Procedure </h2>
