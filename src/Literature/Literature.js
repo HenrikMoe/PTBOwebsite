@@ -65,7 +65,8 @@ const onResumeClick2 = () => {
 					
 				</h3>
 				<div>
- 				<a onClick={onResumeClick2} href={pdf2} className={classes.Link} >
+					
+ 				<a href={process.env.PUBLIC_URL + '/0.3.0.pdf'}  target="_blank" rel="noopener noreferrer" className={classes.Link} >
 				      
 					Transaction Based Capital Gains, Layer 2 DeFi/Dapp Reward FMV Assessments, Smart Contract Tax Payments PDF
 				      
@@ -76,7 +77,7 @@ const onResumeClick2 = () => {
 					
 				</h3>
 				<div>
-				 <a onClick={onResumeClick} href={pdf1} target = "_blank">
+				 <a href={process.env.PUBLIC_URL + '/0.2.2.pdf'}  target="_blank" rel="noopener noreferrer" className={classes.Link} >
 				      
 					Native DeFi Reward FMV Assessments PDF
 				      
