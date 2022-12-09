@@ -6,7 +6,13 @@ import pdf2 from "../assets/0.3.0.pdf"
 
 const Literature = () => {
 
+const onResumeClick = () => {
+  window.open(pdf1);
+}
 
+const onResumeClick2 = () => {
+  window.open(pdf2);
+}
   const onButtonClick = () => {
         // using Java Script method to get PDF file
         fetch('0.3.0.pdf').then(response => {
@@ -57,7 +63,7 @@ const Literature = () => {
 					
 				</h3>
 				<div>
- 				<a href={pdf1} target="_blank">
+ 				<a onClick={onResumeClick2} className={classes.Link} >
 				      
 					Transaction Based Capital Gains, Layer 2 DeFi/Dapp Reward FMV Assessments, Smart Contract Tax Payments PDF
 				      
@@ -68,7 +74,7 @@ const Literature = () => {
 					
 				</h3>
 				<div>
-				 <a  href = {pdf2} target = "_blank">
+				 <a onClick={onResumeClick} target = "_blank">
 				      
 					Native DeFi Reward FMV Assessments PDF
 				      
