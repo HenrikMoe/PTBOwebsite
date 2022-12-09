@@ -7,7 +7,7 @@ const Literature = () => {
 
   const onButtonClick = () => {
         // using Java Script method to get PDF file
-        fetch('../assets/0.3.0.pdf').then(response => {
+        fetch('0.3.0.pdf').then(response => {
             response.blob().then(blob => {
                 // Creating new object of PDF file
                 const fileURL = window.URL.createObjectURL(blob);
@@ -22,7 +22,7 @@ const Literature = () => {
   
    const onButtonClick2 = () => {
         // using Java Script method to get PDF file
-        fetch('../assets/0.2.2.pdf').then(response => {
+        fetch('0.2.2.pdf').then(response => {
             response.blob().then(blob => {
                 // Creating new object of PDF file
                 const fileURL = window.URL.createObjectURL(blob);
@@ -56,8 +56,6 @@ const Literature = () => {
 				</h3>
 				<div
 						className={classes.Link}
-						target="_blank"
-						rel="noreferrer"
 						onClick={onButtonClick}
 					>
 						Transaction Based Capital Gains, Layer 2 DeFi/Dapp Reward FMV Assessments, Smart Contract Tax Payments
@@ -67,8 +65,6 @@ const Literature = () => {
 				</h3>
 				<div
 						className={classes.Link}
-						target="_blank"
-						rel="noreferrer"
 						onClick={onButtonClick2}
 					>
 						Native DeFi Reward FMV Assessments
