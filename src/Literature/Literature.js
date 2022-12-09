@@ -1,13 +1,39 @@
 import React from "react";
 import classes from "./Literature.module.css";
 import jsPDF from "jspdf";
-import pdf1 from "../assets/0.2.2.pdf"
-import pdf2 from "../assets/0.3.0.pdf"
 
 const Literature = () => {
 
 
-
+  const onButtonClick = () => {
+        // using Java Script method to get PDF file
+        fetch('../assets/0.3.0.pdf').then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'CryptoCount0.3.0.pdf';
+                alink.click();
+            })
+        })
+    }
+  
+   const onButtonClick2 = () => {
+        // using Java Script method to get PDF file
+        fetch('../assets/0.2.2.pdf').then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'CryptoCount0.2.2.pdf';
+                alink.click();
+            })
+        })
+    }
 
 	return (
 		<div className={classes.LitWrapper}>
@@ -32,8 +58,7 @@ const Literature = () => {
 						className={classes.Link}
 						target="_blank"
 						rel="noreferrer"
-						href={pdf2}
-						download="CryptoCount0.3.0.pdf"
+						onClick={onButtonClick}
 					>
 						Transaction Based Capital Gains, Layer 2 DeFi/Dapp Reward FMV Assessments, Smart Contract Tax Payments
 					</a>
@@ -44,8 +69,7 @@ const Literature = () => {
 						className={classes.Link}
 						target="_blank"
 						rel="noreferrer"
-						href={pdf1}
-						download="CryptoCount0.2.2.pdf"
+						onClick={onButtonClick2}
 					>
 						Native DeFi Reward FMV Assessments
 					</a>
