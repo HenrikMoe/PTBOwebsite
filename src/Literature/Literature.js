@@ -1,8 +1,8 @@
 import React from "react";
 import classes from "./Literature.module.css";
 import jsPDF from "jspdf";
-import pdf1 from "../assets/0.2.2.pdf"
-import pdf2 from "../assets/0.3.0.pdf"
+import pdf1 from "../assets/CryptoCountCurrentBehaviors.pdf"
+import pdf2 from "../assets/CryptoCountNewBehaviors.pdf"
 
 console.log(pdf1)
 
@@ -66,7 +66,7 @@ const onResumeClick2 = () => {
 				</h3>
 				<div>
 					
- 				<a href={process.env.PUBLIC_URL + '/newBehaviors.pdf'}  target="_blank" rel="noopener noreferrer" className={classes.Link} >
+ 				<a href={pdf2}  target="_blank"  >
 				      
 					Transaction Based Capital Gains, Layer 2 DeFi/Dapp Reward FMV Assessments, Smart Contract Tax Payments PDF
 				      
@@ -77,7 +77,7 @@ const onResumeClick2 = () => {
 					
 				</h3>
 				<div>
-				 <a href={process.env.PUBLIC_URL + '/currentBehaviors.pdf'}  target="_blank" rel="noopener noreferrer" className={classes.Link} >
+				 <a href={pdf1}  target="_blank"  >
 				      
 					Native DeFi Reward FMV Assessments PDF
 				      
