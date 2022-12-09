@@ -1,6 +1,8 @@
 import React from "react";
 import classes from "./Literature.module.css";
 import jsPDF from "jspdf";
+import pdf1 from "../../public/0.2.2.pdf"
+import pdf2 from "../../public/0.3.0.pdf"
 
 const Literature = () => {
 
@@ -54,21 +56,20 @@ const Literature = () => {
 				<h3 className={classes.words}>CryptoCount x Tezos 0.3.0 WhitePaper:
 					
 				</h3>
-				<div
-						className={classes.Link}
-						onClick={onButtonClick}
-					>
-						Transaction Based Capital Gains, Layer 2 DeFi/Dapp Reward FMV Assessments, Smart Contract Tax Payments
-					</div>
-					<h3 className={classes.words}>CryptoCount x Tezos 0.2.2 WhitePaper:
+ 				<a className={classes.Link} href={pdf1} without rel="noopener noreferrer" target="_blank">
+				      <button trailingIcon="picture_as_pdf" label="Resume">
+					Transaction Based Capital Gains, Layer 2 DeFi/Dapp Reward FMV Assessments, Smart Contract Tax Payments PDF
+				      </button>
+				   </a>
+			
+				<h3 className={classes.words}>CryptoCount x Tezos 0.2.2 WhitePaper:
 					
 				</h3>
-				<div
-						className={classes.Link}
-						onClick={onButtonClick2}
-					>
-						Native DeFi Reward FMV Assessments
-					</div>
+				 <a className={classes.Link} href={pdf2} without rel="noopener noreferrer" target="_blank">
+				      <button trailingIcon="picture_as_pdf" label="Resume">
+					Native DeFi Reward FMV Assessments PDF
+				      </button>
+				   </a>
 			</div>
 		</div>
 	);
