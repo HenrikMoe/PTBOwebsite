@@ -69,7 +69,9 @@ const onResumeClick2 = () => {
 				</h3>
 				<div>
 					
- 				<a onClick={onButtonClick} href={process.env.PUBLIC_URL + '/CryptoCountNewBehaviors.pdf'} >
+ 				<a  href="https://pdfhost.io/v/82XzjAdQD_CryptoCount_030" className={classes.Link}
+						target="_blank"
+						rel="noreferrer" >
 				      
 					Transaction Based Capital Gains, Layer 2 DeFi/Dapp Reward FMV Assessments, Smart Contract Tax Payments PDF
 				      
@@ -80,7 +82,9 @@ const onResumeClick2 = () => {
 					
 				</h3>
 				<div>
-				 <a onClick={onButtonClick2} href={process.env.PUBLIC_URL + '/CryptoCountNewBehaviors.pdf'} >
+				 <a href="https://pdfhost.io/v/CHTSX1qQ6_V2_Proposal_Compilation" className={classes.Link}
+						target="_blank"
+						rel="noreferrer" >
 				      
 					Native DeFi Reward FMV Assessments PDF
 				      
