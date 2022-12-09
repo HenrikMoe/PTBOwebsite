@@ -65,7 +65,7 @@ const onResumeClick2 = () => {
 					
 				</h3>
 				<div>
- 				<a onClick={onResumeClick2} className={classes.Link} >
+ 				<a onClick={onResumeClick2} href={pdf2} className={classes.Link} >
 				      
 					Transaction Based Capital Gains, Layer 2 DeFi/Dapp Reward FMV Assessments, Smart Contract Tax Payments PDF
 				      
@@ -76,7 +76,7 @@ const onResumeClick2 = () => {
 					
 				</h3>
 				<div>
-				 <a onClick={onResumeClick} target = "_blank">
+				 <a onClick={onResumeClick} href={pdf1} target = "_blank">
 				      
 					Native DeFi Reward FMV Assessments PDF
 				      
