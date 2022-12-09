@@ -1,8 +1,8 @@
 import React from "react";
 import classes from "./Literature.module.css";
 import jsPDF from "jspdf";
-import pdf1 from "../../public/0.2.2.pdf"
-import pdf2 from "../../public/0.3.0.pdf"
+import pdf1 from "../assets/0.2.2.pdf"
+import pdf2 from "../assets/0.3.0.pdf"
 
 const Literature = () => {
 
