@@ -4,6 +4,8 @@ import jsPDF from "jspdf";
 import pdf1 from "../assets/0.2.2.pdf"
 import pdf2 from "../assets/0.3.0.pdf"
 
+console.log(pdf1)
+
 const Literature = () => {
 
 const onResumeClick = () => {
