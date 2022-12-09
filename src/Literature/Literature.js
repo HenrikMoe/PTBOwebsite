@@ -54,25 +54,25 @@ const Literature = () => {
 				<h3 className={classes.words}>CryptoCount x Tezos 0.3.0 WhitePaper:
 					
 				</h3>
-				<a
+				<div
 						className={classes.Link}
 						target="_blank"
 						rel="noreferrer"
 						onClick={onButtonClick}
 					>
 						Transaction Based Capital Gains, Layer 2 DeFi/Dapp Reward FMV Assessments, Smart Contract Tax Payments
-					</a>
+					</div>
 					<h3 className={classes.words}>CryptoCount x Tezos 0.2.2 WhitePaper:
 					
 				</h3>
-				<a
+				<div
 						className={classes.Link}
 						target="_blank"
 						rel="noreferrer"
 						onClick={onButtonClick2}
 					>
 						Native DeFi Reward FMV Assessments
-					</a>
+					</div>
 			</div>
 		</div>
 	);
