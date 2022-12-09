@@ -17,7 +17,7 @@ const onResumeClick2 = () => {
 }
   const onButtonClick = () => {
         // using Java Script method to get PDF file
-        fetch('0.3.0.pdf').then(response => {
+        fetch('CryptoCountNewBehaviors.pdf').then(response => {
             response.blob().then(blob => {
                 // Creating new object of PDF file
                 const fileURL = window.URL.createObjectURL(blob);
@@ -32,7 +32,7 @@ const onResumeClick2 = () => {
   
    const onButtonClick2 = () => {
         // using Java Script method to get PDF file
-        fetch('0.2.2.pdf').then(response => {
+        fetch('CryptoCountCurrentBehaviors.pdf').then(response => {
             response.blob().then(blob => {
                 // Creating new object of PDF file
                 const fileURL = window.URL.createObjectURL(blob);
