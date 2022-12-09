@@ -56,19 +56,19 @@ const Literature = () => {
 				<h3 className={classes.words}>CryptoCount x Tezos 0.3.0 WhitePaper:
 					
 				</h3>
- 				<a className={classes.Link} href={pdf1} without rel="noopener noreferrer" target="_blank">
-				      <button trailingIcon="picture_as_pdf" label="Resume">
+ 				<a className={classes.Link} href={pdf1} target="_blank">
+				      
 					Transaction Based Capital Gains, Layer 2 DeFi/Dapp Reward FMV Assessments, Smart Contract Tax Payments PDF
-				      </button>
+				      
 				   </a>
 			
 				<h3 className={classes.words}>CryptoCount x Tezos 0.2.2 WhitePaper:
 					
 				</h3>
-				 <a className={classes.Link} href={pdf2} without rel="noopener noreferrer" target="_blank">
-				      <button trailingIcon="picture_as_pdf" label="Resume">
+				 <a className={classes.Link} href={pdf2} target="_blank">
+				      
 					Native DeFi Reward FMV Assessments PDF
-				      </button>
+				      
 				   </a>
 			</div>
 		</div>
