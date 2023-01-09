@@ -196,7 +196,11 @@ const Home = (props) => {
 	
 	
 		console.log(props.object)
-		handleCSVDownload()
+		// eslint-disable-next-line no-lone-blocks
+		if(props.object.object.realizingNativeRewards) {
+			handleCSVDownload()
+		}
+			
 
 
 	return (
