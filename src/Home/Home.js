@@ -44,6 +44,65 @@ const Home = (props) => {
 	
 		const [realizingNativeRewardMarker, setRealizingNativeRewardMarker] = React.useState(false)
 	
+		const [csvData, setCsvData] = useState([])
+
+		const handleCSVDownload = () => {
+			console.log('in datcsv ')
+			var last = props.object.object.realizingNativeRewards.length
+			if(last !== 0){
+				var csvDataReal = 
+				[ [ 
+						"LPOSBlockchain", "TezosStakingAddress",
+						"Fiat", "PeriodStart", 
+						"PeriodEnd", "QuantityofXTZRewardsSold",  
+						"AverageAssetBasisCost", "FairMarketValueNativeRewardIncome",
+						"SupplyDepletionNativeRewardIncome", "MarketDilutionNativeRewardIncome", 
+				],
+				[
+					"Tezos", props.object.object.walletAddress, props.object.object.fiat, props.object.object.realizingNativeRewards[0].date,
+					props.object.object.realizingNativeRewards[last - 1].date, Math.round((props.object.object.aggregateRealizedNativeReward100p*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","), 
+					props.object.object.weightedAverageTotalDomainInvestmentCost.toFixed(2), Math.round((props.object.object.aggregateRealizedNativeFMVReward100p*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","),
+					Math.round((props.object.object.aggregateRealizedNativeSupplyDepletion100p*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","), Math.round((props.object.object.aggregateRealizedNativeMarketDilution100p*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+				]]
+			}
+			else{
+				last = props.object.object.realizedNativeRewards.length
+				csvDataReal = 
+				[[ 
+						"LPOSBlockchain", "TezosStakingAddress",
+						"Fiat", "PeriodStart", 
+						"PeriodEnd", "QuantityofXTZRewardsSold",  
+						"AverageAssetBasisCost", "FairMarketValueNativeRewardIncome",
+						"SupplyDepletionNativeRewardIncome", "MarketDilutionNativeRewardIncome", 
+				],
+				[
+					"Tezos", props.object.object.walletAddress, props.object.object.fiat, props.object.object.realizedNativeRewards[0].date,
+					props.object.object.realizedNativeRewards[last-1].date, Math.round((props.object.object.aggregateRealizedNativeReward100p*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","), 
+					props.object.object.weightedAverageTotalDomainInvestmentCost.toFixed(2), Math.round((props.object.object.aggregateRealizedNativeFMVReward100p*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","),
+					Math.round((props.object.objectaggregateRealizedNativeSupplyDepletion100p*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","), Math.round((props.object.object.aggregateRealizedNativeMarketDilution100p*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+				]]
+			}
+			setCsvData(csvDataReal)
+			// 	{userRealize: {blockchain:"Tezos"} , {TezosStakingAddress:`${set["data"]["walletAddress"]}`} },
+	
+			// ]
+			// 		Fiat: `${set["data"]["fiat"]}`,PeriodStart: `${set["data"]["realizingNativeRewards"][0]["date"]}`, 
+			// 		PeriodEnd:`${set["data"]["realizingNativeRewards"][last - 1]["date"]}`, QuantityofXTZRewardsSold:`${(Math.round((set["data"]["aggregateRealizedNativeReward100p"])*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`,  
+			// 		AverageAssetBasisCost:`${set["data"]["weightedAverageTotalDomainInvestmentCost"].toFixed(2)}`, FairMarketValueNativeRewardIncome:`${(Math.round((set["data"]["aggregateRealizedNativeFMVReward100p"])*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`,
+			// 		SupplyDepletionNativeRewardIncome:`${(Math.round((set["data"]["aggregateRealizedNativeSupplyDepletion100p"])*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`,MarketDilutionNativeRewardIncome:`${(Math.round((set["data"]["aggregateRealizedNativeMarketDilution100p"])*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`, 
+				
+			// 	},{}
+			// ]
+			// 	// {LPOSBlockchain: "Tezos", TezosStakingAddress: `${set["data"]["walletAddress"]}`,
+			// 	//  Fiat: `${set["data"]["fiat"]}`, PeriodStart: set["data"]["realizingNativeRewards"][0]["date"], 
+			// 	//  PeriodEnd: set["data"]["realizingNativeRewards"][last - 1]["date"], QuantityofXTZRewardsSold: (Math.round((set["data"]["aggregateRealizedNativeReward100p"])*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","), 
+			// 	//  AverageAssetBasisCost: set["data"]["weightedAverageTotalDomainInvestmentCost"].toFixed(2), FairMarketValueNativeRewardIncome: (Math.round((set["data"]["aggregateRealizedNativeFMVReward100p"])*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","),
+			// 	// SupplyDepletionNativeRewardIncome: (Math.round((set["data"]["aggregateRealizedNativeSupplyDepletion100p"])*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","), MarketDilutionNativeRewardIncome: (Math.round((set["data"]["aggregateRealizedNativeMarketDilution100p"])*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") },
+			// 	// ];
+				console.log(csvData)
+	
+		}
+
 		const handleDownload = (e) => {
 				e.preventDefault();
 				console.log('asdf')
@@ -351,7 +410,8 @@ const Home = (props) => {
 										className={classes.helpIcon}
 									/>
 								</div>
-                                <Button className={classes.buttonReward3} onClick={handleDownload}>Download Statement</Button>
+                                <Button className={classes.buttonReward3} onClick={handleDownload}>Download PDF</Button>
+								<Button className={classes.buttonReward3} onClick={handleCSVDownload}>Download CSV</Button>
                                 {/* <div
 									className={classes.help}
 									tooltip-data="Basis Cost Data and More "
