@@ -151,7 +151,7 @@ const Home = (props) => {
 		const realize = (e) => {
 			props.generateRealize(props.object.object.objectId, quantityRealize.current.value)
 			setRealizingNativeRewardMarker(true)
-			handleCSVDownload()
+			//handleCSVDownload()
 			console.log(realizingNativeRewardMarker)
 			
 		}
@@ -196,6 +196,8 @@ const Home = (props) => {
 	
 	
 		console.log(props.object)
+		handleCSVDownload()
+
 
 	return (
 		<div className={classes.wrap} >
