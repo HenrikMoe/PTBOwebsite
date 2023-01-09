@@ -197,9 +197,12 @@ const Home = (props) => {
 	
 		console.log(props.object)
 		// eslint-disable-next-line no-lone-blocks
-		if(typeof props.object.object.realizingNativeRewards === void 0) {
-			console.log('pre realizing')
-		}else{handleCSVDownload()}
+		if(props.object){
+			if(props.object.object.realizingNativeRewards === void 0) {
+				console.log('pre realizing')
+			}else{handleCSVDownload()}
+		}
+		
 			
 
 
