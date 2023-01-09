@@ -52,6 +52,7 @@ const Home = (props) => {
 			console.log('in datcsv ')
 			var last = props.object.object.realizingNativeRewards.length
 			console.log(last)
+			console.log(props.object.object)
 			if(last !== 0){
 				var csvDataReal = 
 				[ [ 
@@ -415,7 +416,7 @@ const Home = (props) => {
 									/>
 								</div>
                                 <Button className={classes.buttonReward3} onClick={handleDownload}>Download PDF</Button>
-								<CSVLink className={classes.lastButtons}filename={"CryptoCountRealization.csv"} asyncOnClick={true} data={csvData}>Download CSV</CSVLink>
+								<CSVLink className={classes.buttonReward3}filename={"CryptoCountRealization.csv"} asyncOnClick={true} data={csvData}>Download CSV</CSVLink>
                                 {/* <div
 									className={classes.help}
 									tooltip-data="Basis Cost Data and More "
