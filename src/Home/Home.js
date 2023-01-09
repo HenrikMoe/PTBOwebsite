@@ -12,6 +12,8 @@ import codesheet from "../assets/codesheet.png"
 import upsideDown from "../assets/upsideDown.png"
 import apipic from "../assets/api-with-outlets.jpg"
 import Discord from "../assets/Discord.png"
+import { CSVLink } from "react-csv";
+
 
 
 import {connect} from 'react-redux'
@@ -147,6 +149,7 @@ const Home = (props) => {
 		const realize = (e) => {
 			props.generateRealize(props.object.object.objectId, quantityRealize.current.value)
 			setRealizingNativeRewardMarker(true)
+			handleCSVDownload()
 			console.log(realizingNativeRewardMarker)
 			
 		}
@@ -411,7 +414,7 @@ const Home = (props) => {
 									/>
 								</div>
                                 <Button className={classes.buttonReward3} onClick={handleDownload}>Download PDF</Button>
-								<Button className={classes.buttonReward3} onClick={handleCSVDownload}>Download CSV</Button>
+								<CSVLink className={classes.lastButtons}filename={"CryptoCountRealization.csv"} asyncOnClick={true} data={csvData}>Download CSV</CSVLink>
                                 {/* <div
 									className={classes.help}
 									tooltip-data="Basis Cost Data and More "
