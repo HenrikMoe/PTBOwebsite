@@ -51,6 +51,7 @@ const Home = (props) => {
 		const handleCSVDownload = () => {
 			console.log('in datcsv ')
 			var last = props.object.object.realizingNativeRewards.length
+			console.log(last)
 			if(last !== 0){
 				var csvDataReal = 
 				[ [ 
