@@ -425,12 +425,12 @@ h3{
 	}
 
 	.buttonReward3{
-		margin-left: 5px;
-		width: 150px;
+		margin-left: 5px !important;
+		width: 150px !important;
 		background-color: #ac8686 !important;
-		height:30px;
-		border-radius: 5px;
-		color: white;
+		height:30px !important;
+		border-radius: 5px !important;
+		color: white !important;
 		font-size: 12px !important;
 		text-align: left !important;
 	}
