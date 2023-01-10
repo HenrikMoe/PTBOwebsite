@@ -432,6 +432,7 @@ const Home = (props) => {
 									/>
 								</div>
                                 <Button className={classes.buttonReward3} onClick={handleDownload}>Download PDF</Button>
+								{handleCSVDownload}
 								<CSVLink className={classes.buttonReward3}filename={"CryptoCountRealization.csv"} asyncOnClick={true} data={csvData}>Download CSV</CSVLink>
                                 {/* <div
 									className={classes.help}
