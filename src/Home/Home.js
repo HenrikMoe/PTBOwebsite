@@ -47,48 +47,49 @@ const Home = (props) => {
 		const [realizingNativeRewardMarker, setRealizingNativeRewardMarker] = React.useState(false)
 	
 		const [csvData, setCsvData] = useState([])
-		const [currentSet, setCurrentSet] = useState();
-		setCurrentSet(props.object.object)
-		const handleCSVDownload = () => {
+		// const [currentSet, setCurrentSet] = useState();
+		// setCurrentSet(props.object.object)
+		const handleCSVDownload = (data) => {
 			console.log('in datcsv ')
-			var last = props.object.object.realizingNativeRewards.length
-			console.log(last)
-			console.log(currentSet)
-			console.log(props.object.object)
-			if(last !==0){
-				var csvDataReal = 
-				[ [ 
-						"LPOSBlockchain", "TezosStakingAddress",
-						"Fiat", "PeriodStart", 
-						"PeriodEnd", "QuantityofXTZRewardsSold",  
-						"AverageAssetBasisCost", "FairMarketValueNativeRewardIncome",
-						"SupplyDepletionNativeRewardIncome", "MarketDilutionNativeRewardIncome", 
-				],
-				[
-					"Tezos", props.object.object.walletAddress, props.object.object.fiat, props.object.object.realizingNativeRewards[0].date,
-					props.object.object.realizingNativeRewards[last - 1].date, Math.round((props.object.object.aggregateRealizedNativeReward100p*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","), 
-					props.object.object.weightedAverageTotalDomainInvestmentCost.toFixed(2), Math.round((props.object.object.aggregateRealizedNativeFMVReward100p*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","),
-					Math.round((props.object.object.aggregateRealizedNativeSupplyDepletion100p*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","), Math.round((props.object.object.aggregateRealizedNativeMarketDilution100p*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-				]]
-			}
-			else{
-				last = props.object.object.realizedNativeRewards.length
-				csvDataReal = 
-				[[ 
-						"LPOSBlockchain", "TezosStakingAddress",
-						"Fiat", "PeriodStart", 
-						"PeriodEnd", "QuantityofXTZRewardsSold",  
-						"AverageAssetBasisCost", "FairMarketValueNativeRewardIncome",
-						"SupplyDepletionNativeRewardIncome", "MarketDilutionNativeRewardIncome", 
-				],
-				[
-					"Tezos", props.object.object.walletAddress, props.object.object.fiat, props.object.object.realizedNativeRewards[0].date,
-					props.object.object.realizedNativeRewards[last-1].date, Math.round((props.object.object.aggregateRealizedNativeReward100p*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","), 
-					props.object.object.weightedAverageTotalDomainInvestmentCost.toFixed(2), Math.round((props.object.object.aggregateRealizedNativeFMVReward100p*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","),
-					Math.round((props.object.objectaggregateRealizedNativeSupplyDepletion100p*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","), Math.round((props.object.object.aggregateRealizedNativeMarketDilution100p*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-				]]
-			}
-			setCsvData(csvDataReal)
+			console.log(data)
+			// var last = props.object.object.realizingNativeRewards.length
+			// console.log(last)
+			// //console.log(currentSet)
+			// console.log(props.object.object)
+			// if(last !==0){
+			// 	var csvDataReal = 
+			// 	[ [ 
+			// 			"LPOSBlockchain", "TezosStakingAddress",
+			// 			"Fiat", "PeriodStart", 
+			// 			"PeriodEnd", "QuantityofXTZRewardsSold",  
+			// 			"AverageAssetBasisCost", "FairMarketValueNativeRewardIncome",
+			// 			"SupplyDepletionNativeRewardIncome", "MarketDilutionNativeRewardIncome", 
+			// 	],
+			// 	[
+			// 		"Tezos", props.object.object.walletAddress, props.object.object.fiat, props.object.object.realizingNativeRewards[0].date,
+			// 		props.object.object.realizingNativeRewards[last - 1].date, Math.round((props.object.object.aggregateRealizedNativeReward100p*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","), 
+			// 		props.object.object.weightedAverageTotalDomainInvestmentCost.toFixed(2), Math.round((props.object.object.aggregateRealizedNativeFMVReward100p*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","),
+			// 		Math.round((props.object.object.aggregateRealizedNativeSupplyDepletion100p*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","), Math.round((props.object.object.aggregateRealizedNativeMarketDilution100p*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+			// 	]]
+			// }
+			// else{
+			// 	last = props.object.object.realizedNativeRewards.length
+			// 	csvDataReal = 
+			// 	[[ 
+			// 			"LPOSBlockchain", "TezosStakingAddress",
+			// 			"Fiat", "PeriodStart", 
+			// 			"PeriodEnd", "QuantityofXTZRewardsSold",  
+			// 			"AverageAssetBasisCost", "FairMarketValueNativeRewardIncome",
+			// 			"SupplyDepletionNativeRewardIncome", "MarketDilutionNativeRewardIncome", 
+			// 	],
+			// 	[
+			// 		"Tezos", props.object.object.walletAddress, props.object.object.fiat, props.object.object.realizedNativeRewards[0].date,
+			// 		props.object.object.realizedNativeRewards[last-1].date, Math.round((props.object.object.aggregateRealizedNativeReward100p*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","), 
+			// 		props.object.object.weightedAverageTotalDomainInvestmentCost.toFixed(2), Math.round((props.object.object.aggregateRealizedNativeFMVReward100p*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","),
+			// 		Math.round((props.object.objectaggregateRealizedNativeSupplyDepletion100p*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","), Math.round((props.object.object.aggregateRealizedNativeMarketDilution100p*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+			// 	]]
+			// }
+			// setCsvData(csvDataReal)
 			// 	{userRealize: {blockchain:"Tezos"} , {TezosStakingAddress:`${set["data"]["walletAddress"]}`} },
 	
 			// ]
@@ -105,7 +106,7 @@ const Home = (props) => {
 			// 	//  AverageAssetBasisCost: set["data"]["weightedAverageTotalDomainInvestmentCost"].toFixed(2), FairMarketValueNativeRewardIncome: (Math.round((set["data"]["aggregateRealizedNativeFMVReward100p"])*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","),
 			// 	// SupplyDepletionNativeRewardIncome: (Math.round((set["data"]["aggregateRealizedNativeSupplyDepletion100p"])*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","), MarketDilutionNativeRewardIncome: (Math.round((set["data"]["aggregateRealizedNativeMarketDilution100p"])*10)/10).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") },
 			// 	// ];
-				console.log(csvData)
+			//	console.log(csvData)
 	
 		}
 
@@ -159,7 +160,7 @@ const Home = (props) => {
 		const realize = (e) => {
 			props.generateRealize(props.object.object.objectId, 
 				quantityRealize.current.value,
-				checkForCsv)
+				handleCSVDownload)
 			setRealizingNativeRewardMarker(true)
 			a = 1
 			

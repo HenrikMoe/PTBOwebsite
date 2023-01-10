@@ -43,7 +43,7 @@ export function generateRealize(setId, quantity, cb){
                         });
                         if (cb) {
                             console.log("CB");
-                            cb();
+                            cb(data);
                         }
                         return
                     })
