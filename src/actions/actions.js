@@ -26,7 +26,7 @@ export function generateSet(fiat){
     }
 }
 
-export function generateRealize(setId, quantity){
+export function generateRealize(setId, quantity, cb){
     return(dispatch)=>{
         api.getRealizingSet(setId, quantity)
             .then((response)=>{
@@ -37,11 +37,17 @@ export function generateRealize(setId, quantity){
                     })
                     .then((data)=> {
                         console.log(data)
-                        return dispatch({
+                        dispatch({
                             type:"UPDATE_OBJECT",
                             object: data,
                         })
+                        if (cb) {
+                            console.log("CB");
+                            cb();
+                        }
+                        return
                     })
+                    
                     .catch((err)=>{
                         console.log(err)
                     })

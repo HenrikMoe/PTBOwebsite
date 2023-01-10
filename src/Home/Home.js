@@ -155,11 +155,11 @@ const Home = (props) => {
 		}
 		var a = 0
 		const realize = (e) => {
-			props.generateRealize(props.object.object.objectId, quantityRealize.current.value)
+			props.generateRealize(props.object.object.objectId, quantityRealize.current.value, handleCSVDownload)
 			setRealizingNativeRewardMarker(true)
 			a = 1
-			//handleCSVDownload()
-			checkForCsv()
+			
+			//checkForCsv()
 			console.log(realizingNativeRewardMarker)
 			
 			
