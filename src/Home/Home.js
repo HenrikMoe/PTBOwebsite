@@ -153,6 +153,9 @@ const Home = (props) => {
 			setRealizingNativeRewardMarker(true)
 			//handleCSVDownload()
 			console.log(realizingNativeRewardMarker)
+			if(realizingNativeRewardMarker) {
+				handleCSVDownload()
+				}
 			
 		}
 	
@@ -197,11 +200,9 @@ const Home = (props) => {
 	
 		console.log(props.object)
 		// eslint-disable-next-line no-lone-blocks
-		try{
-			if(realizingNativeRewardMarker) {
-			handleCSVDownload()
-			}
-		}catch(e){console.log(e)}
+		
+		
+		
 		
 			
 
