@@ -108,9 +108,9 @@ const Home = (props) => {
 		}
 
 		const checkForCsv = (e) => {
-			if(a === 1){
+			
 				handleCSVDownload()
-			}
+			
 		}
 
 		const handleDownload = (e) => {
@@ -155,7 +155,9 @@ const Home = (props) => {
 		}
 		var a = 0
 		const realize = (e) => {
-			props.generateRealize(props.object.object.objectId, quantityRealize.current.value, handleCSVDownload)
+			props.generateRealize(props.object.object.objectId, 
+				quantityRealize.current.value,
+				checkForCsv)
 			setRealizingNativeRewardMarker(true)
 			a = 1
 			
@@ -432,7 +434,7 @@ const Home = (props) => {
 									/>
 								</div>
                                 <Button className={classes.buttonReward3} onClick={handleDownload}>Download PDF</Button>
-								{handleCSVDownload}
+								
 								<CSVLink className={classes.buttonReward3}filename={"CryptoCountRealization.csv"} asyncOnClick={true} data={csvData}>Download CSV</CSVLink>
                                 {/* <div
 									className={classes.help}

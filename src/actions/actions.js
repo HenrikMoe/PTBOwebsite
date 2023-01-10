@@ -40,7 +40,7 @@ export function generateRealize(setId, quantity, cb){
                         dispatch({
                             type:"UPDATE_OBJECT",
                             object: data,
-                        })
+                        });
                         if (cb) {
                             console.log("CB");
                             cb();
