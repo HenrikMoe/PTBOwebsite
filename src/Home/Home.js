@@ -53,7 +53,7 @@ const Home = (props) => {
 			var last = props.object.object.realizingNativeRewards.length
 			console.log(last)
 			console.log(props.object.object)
-			if(last !== 0){
+			if(last !==0){
 				var csvDataReal = 
 				[ [ 
 						"LPOSBlockchain", "TezosStakingAddress",
