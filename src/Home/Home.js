@@ -150,7 +150,7 @@ const Home = (props) => {
 	
 		const realize = (e) => {
 			props.generateRealize(props.object.object.objectId, quantityRealize.current.value)
-			setRealizingNativeRewardMarker(true)
+			setRealizingNativeRewardMarker(false)
 			//handleCSVDownload()
 			console.log(realizingNativeRewardMarker)
 			if(realizingNativeRewardMarker) {
