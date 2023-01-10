@@ -47,11 +47,13 @@ const Home = (props) => {
 		const [realizingNativeRewardMarker, setRealizingNativeRewardMarker] = React.useState(false)
 	
 		const [csvData, setCsvData] = useState([])
-
+		const [currentSet, setCurrentSet] = useState();
+		setCurrentSet(props.object.object)
 		const handleCSVDownload = () => {
 			console.log('in datcsv ')
 			var last = props.object.object.realizingNativeRewards.length
 			console.log(last)
+			console.log(currentSet)
 			console.log(props.object.object)
 			if(last !==0){
 				var csvDataReal = 
