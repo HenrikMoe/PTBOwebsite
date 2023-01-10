@@ -108,7 +108,7 @@ const Home = (props) => {
 		}
 
 		const checkForCsv = (e) => {
-			if(realizingNativeRewardMarker === true){
+			if(a === 1){
 				handleCSVDownload()
 			}
 		}
@@ -153,10 +153,11 @@ const Home = (props) => {
 		const reloadWithFiat = (e) => {
 			props.generateSet(fiat.current.value)
 		}
-	
+		var a = 0
 		const realize = (e) => {
 			props.generateRealize(props.object.object.objectId, quantityRealize.current.value)
 			setRealizingNativeRewardMarker(true)
+			a = 1
 			//handleCSVDownload()
 			checkForCsv()
 			console.log(realizingNativeRewardMarker)
