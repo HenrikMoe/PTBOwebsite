@@ -107,8 +107,10 @@ const Home = (props) => {
 	
 		}
 
-		if(realizingNativeRewardMarker === true){
-			handleCSVDownload()
+		const checkForCsv = (e) => {
+			if(realizingNativeRewardMarker === true){
+				handleCSVDownload()
+			}
 		}
 
 		const handleDownload = (e) => {
@@ -156,6 +158,7 @@ const Home = (props) => {
 			props.generateRealize(props.object.object.objectId, quantityRealize.current.value)
 			setRealizingNativeRewardMarker(true)
 			//handleCSVDownload()
+			checkForCsv()
 			console.log(realizingNativeRewardMarker)
 			
 			
