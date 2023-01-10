@@ -205,11 +205,13 @@ const Home = (props) => {
 	
 		};
 	
-	
+		
 		console.log(props.object)
 		// eslint-disable-next-line no-lone-blocks
 		
-		
+		if(props.object.object.realizingNativeRewards.length > 0){
+			console.log('realizing detection')
+		}
 		
 		
 			
