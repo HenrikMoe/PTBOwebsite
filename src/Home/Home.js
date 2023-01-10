@@ -107,6 +107,10 @@ const Home = (props) => {
 	
 		}
 
+		if(realizingNativeRewardMarker === true){
+			handleCSVDownload()
+		}
+
 		const handleDownload = (e) => {
 				e.preventDefault();
 				console.log('asdf')
@@ -150,12 +154,10 @@ const Home = (props) => {
 	
 		const realize = (e) => {
 			props.generateRealize(props.object.object.objectId, quantityRealize.current.value)
-			setRealizingNativeRewardMarker(false)
+			setRealizingNativeRewardMarker(true)
 			//handleCSVDownload()
 			console.log(realizingNativeRewardMarker)
-			if(realizingNativeRewardMarker) {
-				handleCSVDownload()
-				}
+			
 			
 		}
 	
