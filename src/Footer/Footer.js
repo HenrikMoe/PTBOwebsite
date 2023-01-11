@@ -9,17 +9,17 @@ const Footer = () => {
 	return (
 		<footer className={classes.Footer}>
 			<span className={classes.CR}>
-				© Portal To Blockchain Organization 2023
+				© Portal To Blockchain Organization Technologies 2023
 			</span>
 			<div className={classes.FooterCol}>
 				Contact
 				<div className={classes.ContactForm}>
 					<MailOutlineIcon className={classes.Icon} />
 					<a
-						href="mailto:test@gmail.com"
+						href="mailto:henrik@ptbotech.org"
 						className={classes.ContactLink}
 					>
-						Email
+						Email -> (henrik@ptbotech.org)
 					</a>
 				</div>
 				<div className={classes.ContactForm}>

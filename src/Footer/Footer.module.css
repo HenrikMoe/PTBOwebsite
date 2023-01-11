@@ -1,6 +1,6 @@
 .Footer {
-	position: absolute;
-	bottom: -450px;
+	position: fixed;
+	bottom: 0;
 	background: rgb(46, 31, 59);
 	height: 165px;
 	width: 100vw;
