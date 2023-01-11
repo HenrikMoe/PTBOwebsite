@@ -33,7 +33,7 @@ const Home = (props) => {
 	//client module demo functions
 		//on address initialization
 		React.useEffect((e)=>{
-			props.generateSet("EUR")
+			props.generateSet()
 			
 			}, [])
 	

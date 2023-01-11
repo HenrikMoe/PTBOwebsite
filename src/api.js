@@ -31,12 +31,10 @@ export function post(endpoint, body) {
 	return safeFetch("POST", endpoint, body);
 }
 
-export function generatePost(fiat) {
-	return post("/tezos/Generate", 
+export function generatePost() {
+	return post("/tezos/Retrieve", 
 		{
-			"fiat": fiat,
-			"address": "tz3UoffC7FG7zfpmvmjUmUeAaHvzdcUvAj6r",
-			"consensusRole": "Baker"
+			"objectId": "63bf4009fb16e7328e9c2413",
 		},
 	);
 }

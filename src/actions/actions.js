@@ -3,9 +3,9 @@ import * as api from "../api";
 
 //return dispatch object
 
-export function generateSet(fiat){
+export function generateSet(){
     return(dispatch)=>{
-        api.generatePost(fiat)
+        api.generatePost()
             .then((response)=>{
                 response
                     .json()
