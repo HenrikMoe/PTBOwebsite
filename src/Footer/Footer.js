@@ -12,14 +12,13 @@ const Footer = () => {
 				© Portal To Blockchain Organization Technologies 2023
 			</span>
 			<div className={classes.FooterCol}>
-				Contact
 				<div className={classes.ContactForm}>
 					<MailOutlineIcon className={classes.Icon} />
 					<a
 						href="mailto:henrik@ptbotech.org"
 						className={classes.ContactLink}
 					>
-						Email -> (henrik@ptbotech.org)
+						Email 
 					</a>
 				</div>
 				<div className={classes.ContactForm}>
