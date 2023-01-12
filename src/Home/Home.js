@@ -455,7 +455,7 @@ const Home = (props) => {
 
                                 <div className={classes.setToggles3}>
 							    <div className={classes.quantGroup}>
-                                <div className={classes.words3}>Calculated by <a href="https://cryptocount.co">CryptoCount</a><a href="https://cryptocount.co"><img class={classes.cclogo2}src={ccLogo} alt="cclogo" ></img></a></div>
+                                <div className={classes.words3}>Calculated by <a className={classes.at}href="https://cryptocount.co">CryptoCount</a><a href="https://cryptocount.co"><img class={classes.cclogo2}src={ccLogo} alt="cclogo" ></img></a></div>
 
                                 </div>
                                 </div>
