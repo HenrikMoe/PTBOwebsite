@@ -34,7 +34,7 @@ export function post(endpoint, body) {
 export function generatePost() {
 	return post("/tezos/Retrieve", 
 		{
-			"objectId": "63bf4009fb16e7328e9c2413",
+			"setId": "63bf4009fb16e7328e9c2413",
 		},
 	);
 }
