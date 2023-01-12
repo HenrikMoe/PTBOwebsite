@@ -241,7 +241,7 @@ const Home = (props) => {
 				/> */}
 				<div>
 					<div className={classes.inline}>
-					<h2 className={classes.words7}>Open Source Products</h2><a href="https://cryptocount.co"><img class={classes.cclogo}src={ccLogo} alt="cclogo" ></img></a>{" "}<img class={classes.ptbologo}src={img} alt="ptboimg"></img>{" "}<a href="https://app.swaggerhub.com/apis-docs/PORTALTOBLOCKCHAIN_1/crypto-count_api/0.2.2#/"><img class={classes.apilogo}src={apipic} alt="apithing" ></img></a>
+					<h2 className={classes.words7}>Open Source Products</h2><a href="https://cryptocount.co"><img class={classes.cclogo}src={ccLogo} alt="cclogo" ></img></a>{" "}<img class={classes.ptbologo}src={img} alt="ptboimg"></img>{" "}<a href="https://app.swaggerhub.com/apis-docs/PORTALTOBLOCKCHAIN_1/crypto-count_api/0.2.2#/"><img class={classes.apilogo}src={apipic} alt="apithing" ></img></a><div>CryptoCount and CryptoCount API</div>
 					</div>
 					
 					<h2 className={classes.words3}>Client Example Below</h2>
