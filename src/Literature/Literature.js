@@ -51,34 +51,53 @@ const onResumeClick2 = () => {
 	return (
 		<div className={classes.LitWrapper}>
 			<div className={classes.Literature}>
-			<h3 className={classes.words}>Live Version: CryptoCount x Tezos 0.2.2</h3>
-				<h3 className={classes.words}>Resourced CryptoCount 0.2.2 Block Reward Accounting Methods:
-					
-				</h3>
-				<a
-						className={classes.Link}
-						target="_blank"
-						rel="noreferrer"
-						href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3672461"
-					>
-						Dilution and True Economic Gain from Cryptocurrency
-						Block Rewards
-					</a>
-				<h3 className={classes.words}>CryptoCount x Tezos 0.3.0 WhitePaper:
+			
+			
+				<h3 className={classes.words}>CryptoCount Tax - Tezos 0.3.N:
 					
 				</h3>
 				<div>
 					
- 				<a  href="https://pdfhost.io/v/82XzjAdQD_CryptoCount_030" className={classes.Link}
+ 				<a  href="https://pdfhost.io/v/Jsm~JCHHg_PTBO_TECHs_CryptoCount_RENDERING_APP" className={classes.Link}
 						target="_blank"
 						rel="noreferrer" >
 				      
-					Transaction Based Capital Gains, Layer 2 DeFi/Dapp Reward FMV Assessments, Smart Contract Tax Payments PDF
+					  PTBO TECH's CryptoCount RENDERING APP
+				      
+				   </a>
+				</div>
+				<div>
+					
+ 				<a  href="https://pdfhost.io/v/D7y89iOxX_PTBO_TECHs_CryptoCount_BACKEND_APP_and_CRON_SCRIPT" className={classes.Link}
+						target="_blank"
+						rel="noreferrer" >
+				      
+					  PTBO TECH's CryptoCount  BACKEND APP and CRON SCRIPT
+				      
+				   </a>
+				</div>
+				<div>
+					
+ 				<a  href="https://pdfhost.io/v/OYsngYykU_PTBO_TECHs_CryptoCount_AI_APP_TRANSACTION_TO_ACCOUNTING_ENTRIES" className={classes.Link}
+						target="_blank"
+						rel="noreferrer" >
+				      
+					  PTBO TECH's CryptoCount AI APP - TRANSACTION TO ACCOUNTING ENTRIES
+				      
+				   </a>
+				</div>
+				<div>
+					
+ 				<a  href="https://pdfhost.io/v/Ow0HBzNja_PTBO_TECHs_CryptoCount_KUBERNETES_CLOUD_SPECIFICATIONS" className={classes.Link}
+						target="_blank"
+						rel="noreferrer" >
+				      
+					  PTBO TECH's CryptoCount KUBERNETES CLOUD SPECIFICATIONS
 				      
 				   </a>
 				</div>
 			
-				<h3 className={classes.words}>CryptoCount x Tezos 0.2.2 WhitePaper:
+				<h3 className={classes.words}>LIVE: CryptoCount x Tezos 0.2.N WhitePaper:
 					
 				</h3>
 				<div>
@@ -86,13 +105,26 @@ const onResumeClick2 = () => {
 						target="_blank"
 						rel="noreferrer" >
 				      
-					Native DeFi Reward FMV Assessments PDF
+					Native Tezos Reward FIFO Income Mockups
 				      
 				   </a>
 				</div>
+				<h3 className={classes.words}>Resourced CryptoCount 0.2.2 Block Reward Accounting Methods:
+					
+					</h3>
+					<a
+							className={classes.Link}
+							target="_blank"
+							rel="noreferrer"
+							href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3672461"
+						>
+							Dilution and True Economic Gain from Cryptocurrency
+							Block Rewards
+						</a>
 			</div>
 		</div>
 	);
 };
 
 export default Literature;
+
