@@ -66,6 +66,7 @@ const onResumeClick2 = () => {
 				      
 				   </a>
 				</div>
+				<br></br>
 				<div>
 					
  				<a  href="https://pdfhost.io/v/D7y89iOxX_PTBO_TECHs_CryptoCount_BACKEND_APP_and_CRON_SCRIPT" className={classes.Link}
@@ -76,6 +77,7 @@ const onResumeClick2 = () => {
 				      
 				   </a>
 				</div>
+				<br></br>
 				<div>
 					
  				<a  href="https://pdfhost.io/v/OYsngYykU_PTBO_TECHs_CryptoCount_AI_APP_TRANSACTION_TO_ACCOUNTING_ENTRIES" className={classes.Link}
@@ -86,6 +88,7 @@ const onResumeClick2 = () => {
 				      
 				   </a>
 				</div>
+				<br></br>
 				<div>
 					
  				<a  href="https://pdfhost.io/v/Ow0HBzNja_PTBO_TECHs_CryptoCount_KUBERNETES_CLOUD_SPECIFICATIONS" className={classes.Link}
@@ -109,7 +112,7 @@ const onResumeClick2 = () => {
 				      
 				   </a>
 				</div>
-				<h3 className={classes.words}>Resourced CryptoCount 0.2.2 Block Reward Accounting Methods:
+				<h3 className={classes.words}>Resourced CryptoCount 0.2.N Block Reward Accounting Methods:
 					
 					</h3>
 					<a
